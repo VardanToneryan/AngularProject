@@ -1,0 +1,124 @@
+footer {
+    padding: 59px 0 ;
+    background-color: #232536;
+}
+
+.logoAndToolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoAndToolbar>img {
+    width: 140px;
+    height: 28.354px;
+}
+
+.logoAndToolbar>div>a {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footerSecondBlock>h2 {
+    width: clamp(250px, 50vw, 562px);
+    color: #FFF;
+    font-family: Sen;
+    font-size: clamp(20px, 3vw, 36px);
+}
+
+.footerSecondBlock {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2e3040;
+    margin: 55px 0;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 80px 64px;
+}
+
+.footerSecondBlock_secondBlock>form>input {
+    border: 1px solid #4C4C4C;
+    background-color: #2e3040;
+    padding: 20px 10px;
+    width: clamp(250px,50vw,323px);
+    color: white;
+}
+
+.footerSecondBlock_secondBlock>form>button {
+    padding: 20px 48px;
+    background-color: #FFD050;
+    border: none;
+    margin-left: 20px;
+}
+
+.footerLastBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerLastBlock>div>p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.footerLastBlock>div>a>img {
+    width: 16px;
+    margin: 0 5px;
+}
+@media screen and (max-width:1370px) {
+    .footerSecondBlock>h2{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:845px) {
+    .footerSecondBlock{
+        padding: 40px 10px;
+    }
+    footer{
+        padding: 30px 0;
+    }
+    .logoAndToolbar {
+        flex-direction: column;
+    }
+    .logoAndToolbar>img {
+        margin: 10px;
+    }
+}
+@media screen and (max-width:530px) {
+    .footerSecondBlock> h2{
+        width: clamp(250px, 70vw, 562px);
+    }
+    .footerSecondBlock_secondBlock>form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerSecondBlock_secondBlock>form>button{
+        margin: 10px 0;
+    }
+    .footerLastBlock{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footerLastBlock>div{
+        margin: 5px 0;
+    }
+    .logoAndToolbar>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logoAndToolbar> div > a{
+        margin: 5px 0;
+    }
+    .footerSecondBlock{
+        margin: 10px 0;
+    }
+}   

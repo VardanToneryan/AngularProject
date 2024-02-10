@@ -1,0 +1,26 @@
+.section-3_display-flex>div {
+    padding: 32px;
+    border: 1px solid rgb(109 110 118 / 30%);
+    transition: 1s; 
+    margin: 10px;
+}
+.section-3_display-flex>div:hover {
+    background-color: #FFD050;
+}
+
+.section-3_display-flex>div>h3 {
+    color: #232536;
+    font-family: Sen;
+    font-size: 28px;
+    letter-spacing: -1px;
+    margin: 16px 0 4px;
+    width: auto;
+}
+
+.section-3_display-flex>div>p {
+    color: #6D6E76;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 28px;
+    width: 232px;
+}

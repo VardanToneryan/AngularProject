@@ -1,1 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    margin-top: 128px;
+}
+.container {
+    /* width: 1370px; */
+    width: clamp(90%, 5vw, 1370px);
+    margin: 0 auto !important;
+}
+.d-f_jc-b_at_c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.yellow-button {
+    padding: 16px 48px;
+    display: inline-block;
+    /* margin: 48px 0 0; */
+    margin-top: clamp(20px, 4vw, 48px);
+    background-color: #FFD050;
+    border: none;
+    text-decoration: none;
+    color: #232536;
+    font-family: Sen;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width:1370px) {
+    .yellow-button {
+        /* margin-top: 80px; */
+    }
+}
+@media screen and (max-width:1230px) {
+    /* .yellow-button {
+        margin-top: 50px;
+    } */
+}
+@media screen and (max-width:845px) {
+    /* .yellow-button {
+        margin-top: 15px;
+    } */
+}
+@media screen and (max-width:640px) {
+    .yellow-button {
+        padding: 8px 16px;
+    }
+    section{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width:530px) {
+}
+
+
+

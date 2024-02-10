@@ -1,0 +1,45 @@
+.section-5_display-flex>div {
+    background-color: #F4F4F4;
+    padding: 40px ;
+    text-align: center;
+    margin: 5px;
+}
+
+.section-5_display-flex>div>h3 {
+    color: #232536;
+    font-family: Sen;
+    font-size: clamp(20px, 5vw, 28px);
+    line-height: 40px;
+    letter-spacing: -1px;
+
+}
+
+.section-5_display-flex>div>p {
+    color: #6D6E76;
+    font-family: Inter;
+    font-size: 14px;
+    width: 240px;
+    margin: 0 0 20px;
+}
+
+.section-5_icones {
+    display: flex;
+    justify-content: center;
+}
+
+.section-5_icones>a {
+    text-decoration: none;
+}
+
+.section-5_icones>a>img {
+    margin: 0 10px;
+}
+
+
+
+
+@media screen and (max-width:530px) {
+    .section-5_display-flex>div{
+        padding: 20px;
+    }
+}

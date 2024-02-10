@@ -1,0 +1,144 @@
+header {
+    padding: 128px 0 192px;
+    background: url('../../../assets/img/header-image.png'), radial-gradient(71.59% 72.01% at 75% 0%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6) 100%);
+    background-blend-mode: multiply;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+header>.container>div {
+    padding: 0 40% 0 0;
+}
+
+header>div>div>h3 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Sen;
+    font-size: clamp(16px, 5vw, 56px);
+    line-height: 64px;
+    letter-spacing: -2px;
+    margin: 24px 0;
+}
+
+header>div>div>p {
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+header>div>div>span {
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 16px;
+    display: block;
+}
+
+header>div>div>p>span {
+    color: #FFD050;
+}
+
+header>div>div>h3>span {
+    color: #FFF;
+    font-family: Inter;
+    font-size: clamp(14px, 5vw, 16px);
+    font-style: normal;
+    font-weight: 900;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+
+@media screen and (max-width:1370px) {
+    header {
+        padding: 110px 0;
+    }
+}
+
+@media screen and (max-width:1230px) {
+    header {
+        padding: 72px 0;
+    }
+
+    header>.container>div {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:1070px) {
+    header {
+        padding: 45px 0;
+    }
+}
+
+@media screen and (max-width:950px) {
+
+    /* header>div>div>h1 {
+        line-height: 45px;
+        width: 520px;
+    } */
+    header {
+        padding: 35px 0;
+    }
+
+    h1 {
+        margin: 12px 0;
+        line-height: normal;
+    }
+}
+
+@media screen and (max-width:845px) {
+    header {
+        padding: 27px 0;
+    }
+
+    h1 {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:640px) {
+    header {
+        padding: 47px 0;
+    }
+
+    header>div>div>h3 {
+        font-size: 16px;
+    }
+
+    header>div>div>span {
+        display: none;
+    }
+}
+
+@media screen and (max-width:530px) {
+    header {
+        padding: 22px 0;
+    }
+
+    h1 {
+        letter-spacing: normal;
+    }
+
+    header>div>div>p {
+        display: none;
+    }
+
+}
