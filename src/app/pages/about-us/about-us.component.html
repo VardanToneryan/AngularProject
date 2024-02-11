@@ -1,1 +1,129 @@
-<p>about-us works!</p>
+<header class="aboutUs_header">
+    <div class="container">
+        <div class="aboutUs_header_firstDiv">
+            <div class="aboutUs_header_firstDiv_block-1">
+                <p>ABOUT US</p>
+                <h2>We are a team of content writers who share their learnings</h2>
+            </div>
+            <div class="aboutUs_header_firstDiv_block-2">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<main>
+    <div class="container">
+        <section class="aboutUs_section-1">
+            <div class="aboutUs_section-1_firstBlock">
+                <div>
+                    <h3>12+</h3>
+                    <p>Blogs Published</p>
+                </div>
+                <div>
+                    <h3>18K+</h3>
+                    <p>Views on Finsweet</p>
+                </div>
+                <div>
+                    <h3>30K+</h3>
+                    <p>Total active Users</p>
+                </div>
+            </div>
+            <div class="aboutUs_section-1_secondBlock">
+                <div class="aboutUs_section-1_secondBlock_blueBlock"></div>
+                <div class="aboutUs_section-1_secondBlock_yellowBlock"></div>
+            </div>
+        </section>
+        <section class="aboutUs_section-2">
+            <div>
+                <h4>Our mision</h4>
+                <h2>Creating valuable content for creatives all around the world</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
+                    Non blandit massa enim nec. Scelerisque viverra
+                    mauris in aliquam sem. At risus viverra
+                    adipiscing at in tellus.
+                </p>
+            </div>
+            <div>
+                <h4>Our Vision</h4>
+                <h2>A platform that empowers individuals to improve</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
+                    Non blandit massa enim nec. Scelerisque
+                    viverra mauris in aliquam sem. At risus
+                    viverra adipiscing at in tellus.
+                </p>
+            </div>
+        </section>
+        <!-- section-2 -->
+        <!-- section-3 -->
+        <section class="aboutUs_section-3">
+            <img class="aboutUs_section-3_icon" src="assets/img/shapes.png" alt="This is a icon">
+            <div>
+                <h4>Our team of creatives</h4>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore
+                    eu fugiat.
+                </p>
+            </div>
+            <img class="aboutUs_section-3_image" src="assets/img/ground-group-growth-hands-461049.png"
+                alt="This is a image">
+        </section>
+
+        <section class="aboutUs_section-3">
+            <img class="aboutUs_section-4_icon" src="assets/img/circle.png" alt="This is a icon">
+            <img class="aboutUs_section-3_image"
+                src="assets/img/three-persons-sitting-on-the-stairs-talking-with-each-other-1438072.png"
+                alt="This is a image">
+            <div>
+                <h4>Our team of creatives</h4>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore
+                    eu fugiat.
+                </p>
+            </div>
+        </section>
+
+        <section class="section-6">
+            <h2>List of Authors</h2>
+            <div class="section-6_display-flex">
+                <div>
+                    @for(item of authors;track item){
+                    <app-authors [data]="item"></app-authors>
+                    }
+                </div>
+            </div>
+        </section>
+
+        <app-join-our-team></app-join-our-team>
+    </div>
+</main>

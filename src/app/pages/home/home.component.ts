@@ -78,6 +78,7 @@ export class HomeComponent {
 
   authors: Authors[] = [
     {
+      id:'1',
       image: 'assets/img/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.png',
       header: 'Dianne Russell',
       text: 'Content Writer @Company',
@@ -87,6 +88,7 @@ export class HomeComponent {
       icone_4: 'assets/img/LI.png',
     },
     {
+      id:'2',
       image: 'assets/img/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.png',
       header: 'Dianne Russell',
       text: 'Content Writer @Company',
@@ -96,6 +98,7 @@ export class HomeComponent {
       icone_4: 'assets/img/LI.png',
     },
     {
+      id:'3',
       image: 'assets/img/fashion-woman-cute-shoes-5704849.png',
       header: 'Dianne Russell',
       text: 'Content Writer @Company',
@@ -105,6 +108,7 @@ export class HomeComponent {
       icone_4: 'assets/img/LI.png',
     },
     {
+      id:'4',
       image: 'assets/img/content-baker-with-delicious-puff-in-cafeteria-6205509.png',
       header: 'Dianne Russell',
       text: 'Content Writer @Company',
@@ -112,6 +116,7 @@ export class HomeComponent {
       icone_2: 'assets/img/tw.png',
       icone_3: 'assets/img/insta.png',
       icone_4: 'assets/img/LI.png',
-    }
+    },
+
   ];
 }

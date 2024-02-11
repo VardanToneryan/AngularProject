@@ -77,11 +77,11 @@
 .blogPost_section-2 h2 {
     color: #232536;
     font-family: Sen;
-    font-size: clamp(24px, 5vw,36px);
+    font-size: clamp(24px, 5vw, 36px);
     line-height: 48px;
     letter-spacing: -2px;
     margin: 48px 0 0;
-    width: clamp(280px,50vw,843px);
+    width: clamp(280px, 50vw, 843px);
 }
 
 .blogPost_section-2 p {
@@ -92,7 +92,7 @@
     font-weight: 400;
     line-height: 28px;
     margin: 16px 0 0;
-    width: clamp(280px,50vw,843px);
+    width: clamp(280px, 50vw, 843px);
 
 }
 
@@ -189,7 +189,8 @@
     .BlogPost_header {
         padding: 50px 0;
     }
-    .blogPost-section-3_display>div{
+
+    .blogPost-section-3_display>div {
         text-align: center;
     }
 }

@@ -1,8 +1,8 @@
 .section-5_display-flex>div {
     background-color: #F4F4F4;
-    padding: 40px ;
+    padding: 40px 28px;
     text-align: center;
-    margin: 5px;
+    margin: 7px;
 }
 
 .section-5_display-flex>div>h3 {

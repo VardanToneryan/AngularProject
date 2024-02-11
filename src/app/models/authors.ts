@@ -1,4 +1,5 @@
 export interface Authors {
+    id: string | number;
     image: string;
     header: string;
     text: string;
