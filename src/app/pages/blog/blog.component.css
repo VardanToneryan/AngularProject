@@ -1,0 +1,116 @@
+
+.blog-header {
+    background: #F4F0F8;
+    padding: 94px 0;
+}
+
+.header-display {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-display>div>h3 {
+    color: #232536;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.header-display>div>h2 {
+    width: clamp(280px,50vw,624px);
+    color: #232536;
+    font-family: Sen;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    margin: 20px 0 16px;
+}
+
+.header-display>div>p {
+    color: #4C4C4C;
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.header-display>div>p>span {
+    color: #592EA9;
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.header-display>div>span {
+    width: clamp(280px,50vw,624px);
+    color: #6D6E76;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 28px;
+    display: block;
+    margin: 0 0 32px;
+}
+
+.section-1 {
+    margin-bottom: 64px;
+}
+
+.section-1>div>h2 {
+    color: #232536;
+    font-family: Sen;
+    font-size: clamp(36px,50vw,48px);
+    line-height: 64px;
+    letter-spacing: -2px;
+    margin: 64px 0 32px;
+    border-bottom: 1px solid rgb(109 110 118 / 32%);
+    padding-bottom: 64px;
+}
+.section-1_prevbAndNextb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 69px 0 0 0;
+}
+.section-1>div>h4 {
+    color: #6D6E76;
+    text-align: center;
+    font-family: Sen;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 10px;
+}
+
+.section-1>div>h3 {
+    color: #232536;
+    text-align: center;
+    font-family: Sen;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    margin: 0 10px;
+}
+@media screen and (max-width:1230px) {
+
+    .blog-header_image {
+        display: none;
+    }
+
+    .section-1_block {
+        margin-top: 0px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section-4_display-flex {
+        justify-content: center;
+    }
+
+    .section-4>h2 {
+        text-align: center;
+    }
+    .header-display {
+        justify-content: center;
+        text-align: center;
+    }
+}

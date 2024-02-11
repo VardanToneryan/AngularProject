@@ -1,0 +1,42 @@
+<header class="blog-header">
+    <div class="container">
+        <div class="header-display">
+            <div>
+                <h3>Featured Post</h3>
+                <h2>Step-by-step guide to choosing great font pairs</h2>
+                <p>By <span>John Doe</span> l May 23, 2022 </p>
+                <span>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                    Excepteur sint occaecat cupidatat non proident.
+                </span>
+
+                <a class="yellow-button" href="#">Read More ></a>
+
+            </div>
+            <div class="blog-header_image">
+                <img src="assets/img/man-in-white-dress-shirt-sitting-on-black-rolling-chair-while-facing-black-computer-set-and-smiling-840996.png"
+                    alt="This ia a image">
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <section class="section-1">
+            <div>
+                <h2>All posts</h2>
+            </div>
+
+            @for(item of blogAllPosts; track item){
+                <app-blog-all-posts [data]="item"></app-blog-all-posts>
+            }
+
+            <div class="section-1_prevbAndNextb">
+                <!-- <h4>< Prev</h4> -->
+                <h4>&lt; Prev</h4>
+                <h3>Next ></h3>
+            </div>
+        </section>
+    </div>
+</main>

@@ -1,0 +1,189 @@
+<header>
+    <div class="container">
+        <div>
+            <h3>Posted on <span>startup</span></h3>
+            <h1>Step-by-step guide to choosing great font pairs</h1>
+            <p>By <span>James West</span> | May 23, 2022</p>
+            <span>
+                Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident.
+            </span>
+            <a class="yellow-button" href="#">Read More ></a>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <section class="section-1">
+            <div class="section-1_firstDiv">
+                <h2>Featured Post</h2>
+                <div class="section-1_firstDiv_border">
+                    <div>
+                        <img src="assets/img/white-concrete-building.png" alt="This is a image">
+                        <p>By<span>John Deo</span>l May 23, 2022</p>
+                        <h3>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor.
+                        </h3>
+                        <p>
+                            Duis aute irure dolor in reprehenderit
+                            in voluptate velit esse cillum dolore eu
+                            fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident.
+                        </p>
+                        <a class="yellow-button" href="#">Read More ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1_secondDiv">
+                <div class="section-1_secondDiv_div1">
+                    <h2>All Posts</h2>
+                    <a href="#">View all</a>
+                </div>
+                <div class="section-1_secondDiv_blocks">
+                    @for(item of allPosts; track item){
+                    <app-all-posts [data]="item"></app-all-posts>
+                    }@empty {
+                    <h2>There are no items</h2>
+                    }
+                </div>
+            </div>
+        </section>
+
+        <!-- section-2 -->
+        <!-- section-3 -->
+
+        <section class="section-2">
+            <div class="section-2_colorBlocks">
+                <div class="yellow_Block"></div>
+                <div class="blue_Block"></div>
+            </div>
+            <div class="section-2_grayBlock">
+                <div>
+                    <h3>ABOUT US</h3>
+                    <p>We are a community of content writers who share their learnings</p>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                    </span>
+                    <a routerLink="/about-us">Read More ></a>
+                </div>
+
+                <div>
+                    <h3>OUR MISION</h3>
+                    <p>Creating valuable content for creatives all around the world</p>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- section-2 -->
+        <!-- section-3 -->
+
+        <section class="section-3">
+            <h2>Choose A Category</h2>
+            <div class="section-3_display-flex">
+                @for(item of category; track item){
+                <app-category [data]="item"></app-category>
+                }
+            </div>
+        </section>
+
+        <!-- section-3 -->
+        <!-- section-4 -->
+
+
+        <section class="section-4">
+            <div class="section-4_displayFlex">
+                <div>
+                    <h2>WHY WE STARTED</h2>
+                    <h3>It started out as a simple idea and evolved into our passion</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip.
+                    </p>
+                    <a href="#">Discover our story ></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- section-4 -->
+        <!-- section-5 -->
+
+        <section class="section-5">
+            <h2>Choose A Category</h2>
+            <div class="section-5_display-flex">
+                @for(item of authors; track item){
+                <app-authors [data]="item"></app-authors>
+                }
+            </div>
+            <div class="section-5_secondDiv">
+                <p>We are</p>
+                <div>
+                    <h3>Featured in</h3>
+                    <a href="#">
+                        <img src="assets/img/Logo1.png" alt="This is a logo">
+                    </a>
+                    <a href="#">
+                        <img src="assets/img/Logo2.png" alt="This is a logo">
+                    </a>
+                    <a href="#">
+                        <img src="assets/img/Logo3.png" alt="This is a logo">
+                    </a>
+                    <a href="#">
+                        <img src="assets/img/Logo4.png" alt="This is a logo">
+                    </a>
+                    <a href="#">
+                        <img src="assets/img/Logo5.png" alt="This is a logo">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- section-5 -->
+        <!-- section-6 -->
+
+        <section class="section-6">
+            <div class="section-6_firstDiv">
+                <h3>TESTIMONIALS</h3>
+                <h2>What people say about our blog</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor.
+                </p>
+            </div>
+            <div class="section-6_secondDiv">
+                <h4>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                </h4>
+                <div>
+                    <img src="assets/img/Profilepicture.png" alt="This is a profile photo">
+                    <div>
+                        <h4>Jonathan Vallem</h4>
+                        <h3>New york, USA</h3>
+                    </div>
+                    <button class="section-6_backButton">
+                        <img src="assets/img/Backbutton.png" alt="This is a Back Button">
+                    </button>
+                    <button>
+                        <img src="assets/img/NextButton.png" alt="This is a Next button">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <app-join-our-team></app-join-our-team>
+    </div>
+</main>
