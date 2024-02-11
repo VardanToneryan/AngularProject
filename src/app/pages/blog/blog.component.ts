@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { BlogAllPostsComponent } from '../../Components/blog-all-posts/blog-all-posts.component';
 import { BlogAllPosts } from "../../models/blogAllPosts";
+import { Category } from "../../models/category";
+import { CommonModule } from '@angular/common';
+import { CategoryComponent } from '../../Components/category/category.component';
+import { JoinOurTeamComponent } from '../../Components/join-our-team/join-our-team.component';
+
+
 
 @Component({
   selector: 'app-blog',
   standalone: true,
-  imports: [RouterModule, BlogAllPostsComponent],
+  imports: [RouterModule, BlogAllPostsComponent,CommonModule,CategoryComponent,JoinOurTeamComponent],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css'
 })
@@ -48,4 +54,31 @@ export class BlogComponent {
       text_2: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident.',
     },
   ];
+  category: Category[] = [
+    {
+      id: '1',
+      image: 'assets/img/icon1.png',
+      header: 'Business',
+      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
+    },
+    {
+      id: '2',
+      image: 'assets/img/icon2.png',
+      header: 'Startup',
+      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
+    },
+    {
+      id: '3',
+      image: 'assets/img/icon3.png',
+      header: 'Economy',
+      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
+    },
+    {
+      id: '4',
+      image: 'assets/img/icon4.png',
+      header: 'Technology',
+      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
+    },
+  ];
+
 }

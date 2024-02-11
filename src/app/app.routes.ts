@@ -7,6 +7,7 @@ import { AuthorsComponent } from './Components/authors/authors.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { PravacyPolicyComponent } from './pages/pravacy-policy/pravacy-policy.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { BlogPostComponent } from './pages/blog-post/blog-post.component';
 
 
 export const routes: Routes = [
@@ -24,7 +25,7 @@ export const routes: Routes = [
     },
     {
         path: 'blog-post',
-        component: BlogComponent
+        component: BlogPostComponent
     },
     {
         path: 'about-us',

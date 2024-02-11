@@ -90,6 +90,20 @@
     letter-spacing: -1px;
     margin: 0 10px;
 }
+.section-3>h2 {
+    text-align: center;
+    color: #232536;
+    font-family: Sen;
+    font-size: 28px;
+    letter-spacing: -1px;
+    margin: 0 0 48px 0;
+}
+
+.section-3_display-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 @media screen and (max-width:1230px) {
 
     .blog-header_image {

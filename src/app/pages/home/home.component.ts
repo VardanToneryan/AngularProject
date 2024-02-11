@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
-import { AllPosts } from '../../models/allPosts';
-import { Category } from "../../models/category";
 import { CommonModule } from '@angular/common';
 import { NavComponent } from '../../Components/nav/nav.component';
 import { AllPostsComponent } from '../../Components/all-posts/all-posts.component';
+import { AllPosts } from '../../models/allPosts';
 import { CategoryComponent } from '../../Components/category/category.component';
+import { Category } from "../../models/category";
 import { AuthorsComponent } from '../../Components/authors/authors.component';
 import { Authors } from '../..//models/authors';
 import { JoinOurTeamComponent } from '../../Components/join-our-team/join-our-team.component';

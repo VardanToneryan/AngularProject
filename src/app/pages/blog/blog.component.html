@@ -11,7 +11,7 @@
                     Excepteur sint occaecat cupidatat non proident.
                 </span>
 
-                <a class="yellow-button" href="#">Read More ></a>
+                <a class="yellow-button" routerLink="/blog-post">Read More ></a>
 
             </div>
             <div class="blog-header_image">
@@ -29,7 +29,7 @@
             </div>
 
             @for(item of blogAllPosts; track item){
-                <app-blog-all-posts [data]="item"></app-blog-all-posts>
+            <app-blog-all-posts [data]="item"></app-blog-all-posts>
             }
 
             <div class="section-1_prevbAndNextb">
@@ -38,5 +38,19 @@
                 <h3>Next ></h3>
             </div>
         </section>
+
+        <section class="section-3">
+            <h2>Choose A Category</h2>
+            <div class="section-3_display-flex">
+                @for(item of category; track item){
+                    <app-category [data]="item"></app-category>
+                }@empty {
+                    <h2>there is no items</h2>
+                }
+            </div>
+        </section>
+
+        <app-join-our-team></app-join-our-team>
     </div>
 </main>
+<router-outlet></router-outlet>
