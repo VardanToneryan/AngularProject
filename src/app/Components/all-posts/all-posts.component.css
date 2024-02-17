@@ -1,11 +1,10 @@
 .allPosts-div {
     padding: 32px 116px 12px 32px;
-    transition: 0.8s;
+    transition: 0.5s;
 }
 
 .allPosts-div:hover {
     background: rgb(251, 246, 234);
-    border-radius: 35px;
 }
 
 .allPosts-div>p {
@@ -26,6 +25,7 @@
     font-family: 'Sen';
     font-size: clamp(16px, 5vw, 24px);
     width: clamp(280px, 50vw, 369px);
+    cursor:pointer ;
 }
 
 @media screen and (max-width:1230px) {

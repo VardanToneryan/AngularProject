@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { NavComponent } from '../../Components/nav/nav.component';
@@ -10,6 +10,11 @@ import { AuthorsComponent } from '../../Components/authors/authors.component';
 import { Authors } from '../..//models/authors';
 import { JoinOurTeamComponent } from '../../Components/join-our-team/join-our-team.component';
 import { FooterComponent } from '../../Components/footer/footer.component';
+import { BlogAllPosts } from '../../models/blogAllPosts';
+import { RequestService } from '../../services/request.service';
+import { NgModel } from '@angular/forms';
+import { environments } from '../../../environments/environments';
+
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -21,102 +26,32 @@ import { FooterComponent } from '../../Components/footer/footer.component';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {
-  allPosts: AllPosts[] = [
-    {
-      id: '1',
-      text_1: 'l Aug 23, 2021',
-      text_2: '8 Figma design systems that you can download for free today.',
-      text_3: 'John Deo'
-    },
-    {
-      id: '2',
-      text_1: 'l Aug 23, 2021',
-      text_2: '8 Figma design systems that you can download for free today.',
-      text_3: 'John Deo',
-    },
-    {
-      id: '3',
-      text_1: 'l Aug 23, 2021',
-      text_2: '8 Figma design systems that you can download for free today.',
-      text_3: 'John Deo',
-    },
-    {
-      id: '4',
-      text_1: 'l Aug 23, 2021',
-      text_2: '8 Figma design systems that you can download for free today.',
-      text_3: 'John Deo',
-    }
-  ];
+export class HomeComponent implements OnInit {
 
-  category: Category[] = [
-    {
-      id: '1',
-      image: 'assets/img/icon1.png',
-      header: 'Business',
-      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
-    },
-    {
-      id: '2',
-      image: 'assets/img/icon2.png',
-      header: 'Startup',
-      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
-    },
-    {
-      id: '3',
-      image: 'assets/img/icon3.png',
-      header: 'Economy',
-      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
-    },
-    {
-      id: '4',
-      image: 'assets/img/icon4.png',
-      header: 'Technology',
-      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
-    },
-  ];
+  constructor(public request: RequestService) { }
 
-  authors: Authors[] = [
-    {
-      id:'1',
-      image: 'assets/img/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.png',
-      header: 'Dianne Russell',
-      text: 'Content Writer @Company',
-      icone_1: 'assets/img/fb.png',
-      icone_2: 'assets/img/tw.png',
-      icone_3: 'assets/img/insta.png',
-      icone_4: 'assets/img/LI.png',
-    },
-    {
-      id:'2',
-      image: 'assets/img/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.png',
-      header: 'Dianne Russell',
-      text: 'Content Writer @Company',
-      icone_1: 'assets/img/fb.png',
-      icone_2: 'assets/img/tw.png',
-      icone_3: 'assets/img/insta.png',
-      icone_4: 'assets/img/LI.png',
-    },
-    {
-      id:'3',
-      image: 'assets/img/fashion-woman-cute-shoes-5704849.png',
-      header: 'Dianne Russell',
-      text: 'Content Writer @Company',
-      icone_1: 'assets/img/fb.png',
-      icone_2: 'assets/img/tw.png',
-      icone_3: 'assets/img/insta.png',
-      icone_4: 'assets/img/LI.png',
-    },
-    {
-      id:'4',
-      image: 'assets/img/content-baker-with-delicious-puff-in-cafeteria-6205509.png',
-      header: 'Dianne Russell',
-      text: 'Content Writer @Company',
-      icone_1: 'assets/img/fb.png',
-      icone_2: 'assets/img/tw.png',
-      icone_3: 'assets/img/insta.png',
-      icone_4: 'assets/img/LI.png',
-    },
+  data: AllPosts[] = [];
+  data2: Category[] = [];
+  data3: Authors[] = [];
+  ngOnInit(): void {
+    this.request.getData<AllPosts[]>(environments.AllPosts.get).subscribe((data) => {
+      this.data = data;
+    }, (e) => {
+      console.log(e);
+    })
 
-  ];
+    this.request.getData<Category[]>(environments.Category.get).subscribe((data) => {
+      this.data2 = data;
+    }, (e) => {
+      console.log(e);
+    })
+    this.request.getData<Authors[]>(environments.Authors.get).subscribe((data) => {
+      this.data3 = data;
+    });
+  }
+
+
+  scroll(): void {
+    window.scrollTo(0, 0)
+  }
 }

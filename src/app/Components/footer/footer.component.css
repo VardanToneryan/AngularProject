@@ -12,6 +12,7 @@ footer {
 .logoAndToolbar>img {
     width: 140px;
     height: 28.354px;
+    cursor: pointer;
 }
 
 .logoAndToolbar>div>a {

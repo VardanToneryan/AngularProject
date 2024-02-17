@@ -115,6 +115,10 @@ header>div>div>h3>span {
 
 /* section-1_secondDiv */
 
+.section-1_secondDiv_blocks{
+    overflow-x: auto;
+    max-height: 622px;
+}
 .section-1_secondDiv>div>h2 {
     color: #232536;
     font-family: Sen;
@@ -127,6 +131,7 @@ header>div>div>h3>span {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 32px;
+    
 }
 
 .section-1_secondDiv>div>a {
@@ -415,6 +420,7 @@ header>div>div>h3>span {
 .section-6_backButton {
     margin: 0 7px 0 141px;
 }
+
 
 @media screen and (max-width:1370px) {
     header {

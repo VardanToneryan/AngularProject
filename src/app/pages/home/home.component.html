@@ -1,3 +1,4 @@
+<app-nav></app-nav>
 <header>
     <div class="container">
         <div>
@@ -33,17 +34,17 @@
                             fugiat nulla pariatur. Excepteur sint
                             occaecat cupidatat non proident.
                         </p>
-                        <a class="yellow-button" href="#">Read More ></a>
+                        <a class="yellow-button" routerLink="/layout/blog" (click)="scroll()">Read More ></a>
                     </div>
                 </div>
             </div>
             <div class="section-1_secondDiv">
                 <div class="section-1_secondDiv_div1">
                     <h2>All Posts</h2>
-                    <a href="#">View all</a>
+                    <a (click)="scroll()" routerLink="/layout/blog">View all</a>
                 </div>
                 <div class="section-1_secondDiv_blocks">
-                    @for(item of allPosts; track item){
+                    @for(item of data; track item){
                     <app-all-posts [data]="item"></app-all-posts>
                     }@empty {
                     <h2>There are no items</h2>
@@ -69,7 +70,7 @@
                         adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua.
                     </span>
-                    <a routerLink="/about-us">Read More ></a>
+                    <a routerLink="/layout/about-us">Read More ></a>
                 </div>
 
                 <div>
@@ -91,8 +92,10 @@
         <section class="section-3">
             <h2>Choose A Category</h2>
             <div class="section-3_display-flex">
-                @for(item of category; track item){
+                @for(item of data2; track item){
                 <app-category [data]="item"></app-category>
+                }@empty {
+                <h2>There are no items</h2>
                 }
             </div>
         </section>
@@ -120,10 +123,12 @@
         <!-- section-5 -->
 
         <section class="section-5">
-            <h2>Choose A Category</h2>
+            <h2>List of Authors</h2>
             <div class="section-5_display-flex">
-                @for(item of authors; track item){
+                @for(item of data3; track item){
                 <app-authors [data]="item"></app-authors>
+                }@empty {
+                <h2>There are no items</h2>
                 }
             </div>
             <div class="section-5_secondDiv">
@@ -186,3 +191,4 @@
         <app-join-our-team></app-join-our-team>
     </div>
 </main>
+<app-footer></app-footer>

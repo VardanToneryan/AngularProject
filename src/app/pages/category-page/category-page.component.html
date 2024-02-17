@@ -1,1 +1,53 @@
-<p>category-page works!</p>
+<header class="category_header">
+    <div class="container">
+        <div>
+            <h2>Busines</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+            <p>eiusmod tempor incididunt ut labore.</p>
+            <h4>Blog > Business</h4>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+
+        <section class="category_section-1">
+            <div class="category_section-1_firstblock">
+                <div>
+                    @for(item of blogAllPosts; track item){
+                    <app-blog-all-posts [styles]="{width: '294px'}" [titleStyle]="{width: 'clamp(280px,50vw,510px)'}"
+                        [data]="item"></app-blog-all-posts>
+                    }
+                </div>
+            </div>
+            <div class="category_section-1_secondblock">
+                <h2>Categories</h2>
+                <div class="category_section-1_secondblock-b">
+                    @for(item of category; track item){
+                    <app-category [styles]="{display: 'none'}" [flex]="{display: 'flex', alignItems: 'center'}"
+                        [margin]="{margin: '0 5px'}" [data]="item"></app-category>
+                    }
+                </div>
+
+                <div class="category_section-1_secondblock-underBlock">
+                    <h5>All Tags</h5>
+                    <div>
+                        <a class="category_section-1_secondblock-underBlock_businnes">Business</a>
+                        <a class="category_section-1_secondblock-underBlock_Experience">Experience</a>
+                    </div>
+
+                    <div>
+                        <a class="category_section-1_secondblock-underBlock_Screen">Screen</a>
+                        <a class="category_section-1_secondblock-underBlock_Technology">Technology</a>
+                    </div>
+
+                    <div>
+                        <a class="category_section-1_secondblock-underBlock_Marketing">Marketing</a>
+                        <a class="category_section-1_secondblock-underBlock_Life">Life</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>

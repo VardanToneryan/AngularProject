@@ -12,11 +12,11 @@
         </label>
 
         <nav class="navbar">
-            <a class="navbar_aTegs" routerLink="/blog">Blog</a>
-            <a class="navbar_aTegs" routerLink="/about-us"> About Us </a>
-            <a class="navbar_aTegs" routerLink="/contact">Contact us</a>
+            <a (click)="goUp()" class="navbar_aTegs" routerLink="/layout/blog">Blog</a>
+            <a (click)="goUp()" class="navbar_aTegs" routerLink="/layout/about-us"> About Us </a>
+            <a (click)="goUp()" class="navbar_aTegs" routerLink="/layout/contact">Contact us</a>
 
-            <a href="#" id="navbar_button">
+            <a (click)="scrollDown()" id="navbar_button">
                 Subscribe
             </a>
         </nav>

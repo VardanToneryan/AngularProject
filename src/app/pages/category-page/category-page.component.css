@@ -1,0 +1,223 @@
+.category_header {
+    background-color: #F4F0F8;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category_header h2 {
+    color: #232536;
+    text-align: center;
+    font-family: Sen;
+    font-size: clamp(36px, 5vw, 56px);
+    letter-spacing: -2px;
+    margin-bottom: 16px;
+}
+
+.category_header p {
+    color: #6D6E76;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.category_header h4 {
+    color: #232536;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 32px;
+}
+
+.category_section-1 {
+    display: flex;
+    margin-top: 128px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 128px;
+}
+
+.category_section-1_firstblock>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.category_section-1_firstblock>div>div {
+    padding: 32px 0 32px 32px;
+}
+
+.category_section-1_firstblock h3 {
+    color: #592EA9;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 3px;
+}
+
+.category_section-1_firstblock h2 {
+    color: #232536;
+    font-family: Sen;
+    font-size: clamp(24px, 5vw, 40px);
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -2px;
+    /* width: 512px; */
+    width: clamp(280px, 60vw, 512px);
+    text-align: center;
+
+}
+
+.category_section-1_firstblock p {
+    color: #6D6E76;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 20px 0 16px;
+    /* width: 512px; */
+    width: clamp(280px, 60vw, 512px);
+}
+
+.category_section-1_secondblock>h2 {
+    color: #232536;
+    font-family: Sen;
+    font-size: 36px;
+    letter-spacing: -2px;
+}
+
+.category_section-1_secondblock-b>div {
+    border: 1.5px solid #C1C1C3;
+    display: flex;
+    padding: 24px;
+    margin: 24px;
+    margin-left: 0;
+}
+
+.category_section-1_secondblock div>div>h3 {
+    color: #232536;
+    font-family: Sen;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    margin-left: 16px;
+}
+
+.category_section-1_secondblock-underBlock {
+    margin-top: 48px;
+}
+
+.category_section-1_secondblock-underBlock h5 {
+    color: #232536;
+    font-family: Sen;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
+}
+
+.category_section-1_secondblock-underBlock>div {
+    display: flex;
+}
+
+.category_section-1_secondblock-underBlock_businnes {
+    padding: 8px 38px;
+    border-radius: 28px;
+    border: 2px solid #6D6E76;
+    margin: 12px 8px;
+    color: #232536;
+    font-family: Sen;
+    font-size: 14px;
+    line-height: 32px;
+    text-decoration: none;
+}
+
+
+.category_section-1_secondblock-underBlock_Experience {
+    padding: 8px 37px;
+    border-radius: 28px;
+    border: 2px solid #6D6E76;
+    margin: 12px 8px;
+    color: #232536;
+    font-family: Sen;
+    font-size: 14px;
+    line-height: 32px;
+    text-decoration: none;
+}
+
+
+.category_section-1_secondblock-underBlock_Screen {
+    padding: 8px 48px;
+    border-radius: 28px;
+    border: 2px solid #6D6E76;
+    margin: 12px 8px;
+    color: #232536;
+    font-family: Sen;
+    font-size: 14px;
+    line-height: 32px;
+    text-decoration: none;
+}
+
+.category_section-1_secondblock-underBlock_Technology {
+    padding: 8px 48px;
+    border-radius: 28px;
+    border: 2px solid #6D6E76;
+    margin: 12px 8px;
+    color: #232536;
+    font-family: Sen;
+    font-size: 14px;
+    line-height: 32px;
+    text-decoration: none;
+}
+
+.category_section-1_secondblock-underBlock_Marketing {
+    padding: 8px 54px;
+    border-radius: 28px;
+    border: 2px solid #6D6E76;
+    margin: 12px 8px;
+    color: #232536;
+    font-family: Sen;
+    font-size: 14px;
+    line-height: 32px;
+    text-decoration: none;
+}
+
+.category_section-1_secondblock-underBlock_Life {
+    padding: 8px 38px;
+    border-radius: 28px;
+    border: 2px solid #6D6E76;
+    margin: 12px 8px;
+    color: #232536;
+    font-family: Sen;
+    font-size: 14px;
+    line-height: 32px;
+    text-decoration: none;
+}
+
+
+/* .section-1_images{
+    width: 280px;
+} */
+
+@media screen and (max-width:1320px) {
+    .category_section-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category_section-1_secondblock {
+        margin: 30px 0 0 0;
+        width: 100%;
+    }
+
+    .category_section-1_secondblock-underBlock {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+

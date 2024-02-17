@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { BlogAllPostsComponent } from '../../Components/blog-all-posts/blog-all-posts.component';
 import { BlogAllPosts } from "../../models/blogAllPosts";
 import { Category } from "../../models/category";
@@ -16,7 +16,7 @@ import { JoinOurTeamComponent } from '../../Components/join-our-team/join-our-te
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css'
 })
-export class BlogComponent {
+export class BlogComponent  {
   blogAllPosts: BlogAllPosts[] = [
     {
       id: '1',
@@ -80,5 +80,4 @@ export class BlogComponent {
       text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
     },
   ];
-
 }
