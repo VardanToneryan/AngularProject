@@ -1,121 +1,197 @@
 {
-    "AllPosts": [
-      {
-        "id": "1",
-        "text_1": "l Aug 23, 2021",
-        "text_2": "8 Figma design systems that you can download for free today.",
-        "text_3": "John Deo"
-      },
-      {
-        "id": "2",
-        "text_1": "l Aug 23, 2021",
-        "text_2": "8 Figma design systems that you can download for free today.",
-        "text_3": "John Deo"
-      },
-      {
-        "id": "3",
-        "text_1": "l Aug 23, 2021",
-        "text_2": "8 Figma design systems that you can download for free today.",
-        "text_3": "John Deo"
-      },
-      {
-        "id": "4",
-        "text_1": "l Aug 23, 2021",
-        "text_2": "8 Figma design systems that you can download for free today.",
-        "text_3": "John Deo"
-      },
-      {
-        "id": "5",
-        "text_1": "l Aug 23, 2021",
-        "text_2": "8 Figma design systems that you can download for free today.",
-        "text_3": "John Deo"
-      },
-      {
-        "id": "6",
-        "text_1": "l Aug 23, 2021",
-        "text_2": "8 Figma design systems that you can download for free today.",
-        "text_3": "John Deo"
-      },
-      {
-        "id": "7",
-        "text_1": "l Aug 23, 2021",
-        "text_2": "8 Figma design systems that you can download for free today.",
-        "text_3": "John Deo"
-      },
-      {
-        "id": "8",
-        "text_1": "l Aug 23, 2021",
-        "text_2": "8 Figma design systems that you can download for free today.",
-        "text_3": "John Deo"
-      }
-    ],
-    "Category": [
-      {
-        "id": "1",
-        "image": "assets/img/icon1.png",
-        "header": "Business",
-        "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
-      },
-      {
-        "id": "2",
-        "image": "assets/img/icon2.png",
-        "header": "Startup",
-        "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
-      },
-      {
-        "id": "3",
-        "image": "assets/img/icon3.png",
-        "header": "Economy",
-        "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
-      },
-      {
-        "id": "4",
-        "image": "assets/img/icon4.png",
-        "header": "Technology",
-        "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
-      }
-    ],
-    "Authors": [
-        {
-          "id": "1",
-          "image": "assets/img/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.png",
-          "header": "Dianne Russell",
-          "text": "Content Writer @Company",
-          "icone_1": "assets/img/fb.png",
-          "icone_2": "assets/img/tw.png",
-          "icone_3": "assets/img/insta.png",
-          "icone_4": "assets/img/LI.png"
-        },
-        {
-          "id": "2",
-          "image": "assets/img/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.png",
-          "header": "Dianne Russell",
-          "text": "Content Writer @Company",
-          "icone_1": "assets/img/fb.png",
-          "icone_2": "assets/img/tw.png",
-          "icone_3": "assets/img/insta.png",
-          "icone_4": "assets/img/LI.png"
-        },
-        {
-          "id": "3",
-          "image": "assets/img/fashion-woman-cute-shoes-5704849.png",
-          "header": "Dianne Russell",
-          "text": "Content Writer @Company",
-          "icone_1": "assets/img/fb.png",
-          "icone_2": "assets/img/tw.png",
-          "icone_3": "assets/img/insta.png",
-          "icone_4": "assets/img/LI.png"
-        },
-        {
-          "id": "4",
-          "image": "assets/img/content-baker-with-delicious-puff-in-cafeteria-6205509.png",
-          "header": "Dianne Russell",
-          "text": "Content Writer @Company",
-          "icone_1": "assets/img/fb.png",
-          "icone_2": "assets/img/tw.png",
-          "icone_3": "assets/img/insta.png",
-          "icone_4": "assets/img/LI.png"
-        }
-      ]
-  }
-  
+  "AllPosts": [
+    {
+      "id": "1",
+      "text_1": "l Aug 23, 2021",
+      "text_2": "8 Figma design systems that you can download for free today.",
+      "text_3": "John Deo"
+    },
+    {
+      "id": "2",
+      "text_1": "l Aug 23, 2021",
+      "text_2": "8 Figma design systems that you can download for free today.",
+      "text_3": "John Deo"
+    },
+    {
+      "id": "3",
+      "text_1": "l Aug 23, 2021",
+      "text_2": "8 Figma design systems that you can download for free today.",
+      "text_3": "John Deo"
+    },
+    {
+      "id": "4",
+      "text_1": "l Aug 23, 2021",
+      "text_2": "8 Figma design systems that you can download for free today.",
+      "text_3": "John Deo"
+    },
+    {
+      "id": "5",
+      "text_1": "l Aug 23, 2021",
+      "text_2": "8 Figma design systems that you can download for free today.",
+      "text_3": "John Deo"
+    },
+    {
+      "id": "6",
+      "text_1": "l Aug 23, 2021",
+      "text_2": "8 Figma design systems that you can download for free today.",
+      "text_3": "John Deo"
+    },
+    {
+      "id": "7",
+      "text_1": "l Aug 23, 2021",
+      "text_2": "8 Figma design systems that you can download for free today.",
+      "text_3": "John Deo"
+    },
+    {
+      "id": "8",
+      "text_1": "l Aug 23, 2021",
+      "text_2": "8 Figma design systems that you can download for free today.",
+      "text_3": "John Deo"
+    }
+  ],
+  "Category": [
+    {
+      "id": "1",
+      "image": "assets/img/icon1.png",
+      "header": "Business",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+    },
+    {
+      "id": "2",
+      "image": "assets/img/icon2.png",
+      "header": "Startup",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+    },
+    {
+      "id": "3",
+      "image": "assets/img/icon3.png",
+      "header": "Economy",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+    },
+    {
+      "id": "4",
+      "image": "assets/img/icon4.png",
+      "header": "Technology",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+    }
+  ],
+  "Authors": [
+    {
+      "id": 1,
+      "image": "assets/img/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.png",
+      "name": "Floyd Miles",
+      "text": "Content Writer @Company",
+      "icone_1": "assets/img/fb.png",
+      "icone_2": "assets/img/tw.png",
+      "icone_3": "assets/img/insta.png",
+      "icone_4": "assets/img/LI.png"
+    },
+    {
+      "id": 2,
+      "image": "assets/img/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.png",
+      "name": "Dianne Russell",
+      "text": "Content Writer @Company",
+      "icone_1": "assets/img/fb.png",
+      "icone_2": "assets/img/tw.png",
+      "icone_3": "assets/img/insta.png",
+      "icone_4": "assets/img/LI.png"
+    },
+    {
+      "id": 3,
+      "image": "assets/img/fashion-woman-cute-shoes-5704849.png",
+      "name": "Jenny Wilson",
+      "text": "Content Writer @Company",
+      "icone_1": "assets/img/fb.png",
+      "icone_2": "assets/img/tw.png",
+      "icone_3": "assets/img/insta.png",
+      "icone_4": "assets/img/LI.png"
+    },
+    {
+      "id": 4,
+      "image": "assets/img/content-baker-with-delicious-puff-in-cafeteria-6205509.png",
+      "name": "Leslie Alexander",
+      "text": "Content Writer @Company",
+      "icone_1": "assets/img/fb.png",
+      "icone_2": "assets/img/tw.png",
+      "icone_3": "assets/img/insta.png",
+      "icone_4": "assets/img/LI.png"
+    },
+    {
+      "id": 5,
+      "image": "assets/img/man-in-whitebutton-up-shirt-wearing-black-framed-eyeglasses-7562313.png",
+      "name": "Guy Howkins",
+      "text": "Content Writer @Company",
+      "icone_1": "assets/img/fb.png",
+      "icone_2": "assets/img/tw.png",
+      "icone_3": "assets/img/insta.png",
+      "icone_4": "assets/img/LI.png"
+    },
+    {
+      "id": 6,
+      "image": "assets/img/woman-in-blackand-black-striped-shirt-wearing-black-sunglasses-3671083.png",
+      "name": "Eleanor Pena",
+      "text": "Content Writer @Company",
+      "icone_1": "assets/img/fb.png",
+      "icone_2": "assets/img/tw.png",
+      "icone_3": "assets/img/insta.png",
+      "icone_4": "assets/img/LI.png"
+    },
+    {
+      "id": 7,
+      "image": "assets/img/content-unshaven-man-covering-eye-with-yellow-flower-5262459.png",
+      "name": "Robert Fox",
+      "text": "Content Writer @Company",
+      "icone_1": "assets/img/fb.png",
+      "icone_2": "assets/img/tw.png",
+      "icone_3": "assets/img/insta.png",
+      "icone_4": "assets/img/LI.png"
+    },
+    {
+      "id": 8,
+      "image": "assets/img/cheerful-young-ethnic-male-millennial-standing-near-stone-wall-and-smiling-6147118.png",
+      "name": "Jacob Jones",
+      "text": "Content Writer @Company",
+      "icone_1": "assets/img/fb.png",
+      "icone_2": "assets/img/tw.png",
+      "icone_3": "assets/img/insta.png",
+      "icone_4": "assets/img/LI.png"
+    }
+  ],
+  "BlogAllPosts": [
+    {
+      "id": 1,
+      "image": "assets/img/two-women-in-front-of-dry-erase-board-1181533.png",
+      "header": "STARTUP",
+      "text_1": "Design tips for designers that cover everything you need ",
+      "text_2": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident."
+    },
+    {
+      "id": 2,
+      "image": "assets/img/photo-of-people-doing-handshakes-3183197.png",
+      "header": "STARTUP",
+      "text_1": "Design tips for designers that cover everything you need ",
+      "text_2": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident."
+    },
+    {
+      "id": 3,
+      "image": "assets/img/photo-of-woman-looking-at-man-3183173.png",
+      "header": "STARTUP",
+      "text_1": "Design tips for designers that cover everything you need ",
+      "text_2": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident."
+    },
+    {
+      "id": 4,
+      "image": "assets/img/photo-of-people-walking-on-hallway-3182811.png",
+      "header": "STARTUP",
+      "text_1": "Design tips for designers that cover everything you need ",
+      "text_2": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident."
+    },
+    {
+      "id": 5,
+      "image": "assets/img/two-women-in-front-of-dry-erase-board-1181533.png",
+      "header": "STARTUP",
+      "text_1": "Design tips for designers that cover everything you need ",
+      "text_2": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident."
+    }
+  ]
+}

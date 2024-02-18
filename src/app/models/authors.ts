@@ -1,7 +1,7 @@
 export interface Authors {
     id: string | number;
     image: string;
-    header: string;
+    name: string;
     text: string;
     icone_1: string;
     icone_2: string;

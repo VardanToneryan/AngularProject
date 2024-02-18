@@ -1,0 +1,44 @@
+<header class="author-header">
+    <div class="container">
+        <div class="author-header_block">
+            <div>
+                <img src="assets/img/close-up-photography-of-man-wearing-sunglasses-22222.png" alt="This is a image">
+            </div>
+
+            <div class="author-header_texts">
+                <h1>Hey there, I’m Andrew Jonhson and welcome to my Blog</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris
+                    in aliquam sem. At risus viverra adipiscing at in tellus.
+                </p>
+                <div class="author-header_icones">
+                    <a href=""><img src="assets/img/fb.png" alt="This is a icone"></a>
+                    <a href=""><img src="assets/img/tw.png" alt="This is a icone"></a>
+                    <a href=""><img src="assets/img/insta.png" alt="This is a icone"></a>
+                    <a href=""><img src="assets/img/LI.png" alt="This is a icone"></a>
+                </div>
+            </div>
+        </div>
+        <div class="author-header_colors">
+            <div class="author-header_yellow-block"></div>
+            <div class="author-header_blue-block"></div>
+        </div>
+    </div>
+</header>
+
+
+<main>
+    <div class="container">
+        <section class="author-section-1">
+            <h1>My Posts</h1>
+            <div>
+                <div>
+                    @for(item of data; track item){
+                    <app-blog-all-posts [data]="item"></app-blog-all-posts>
+                    }
+                </div>
+            </div>
+        </section>
+    </div>
+</main>

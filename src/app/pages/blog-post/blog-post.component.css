@@ -110,7 +110,7 @@
 }
 
 
-.blogPost-section-3_display {
+.blogPost-section-3_display > div{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

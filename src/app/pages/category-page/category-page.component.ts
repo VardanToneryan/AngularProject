@@ -1,73 +1,35 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BlogAllPostsComponent } from '../../Components/blog-all-posts/blog-all-posts.component';
 import { BlogAllPosts } from "../../models/blogAllPosts";
 import { Category } from '../../models/category';
 import { CategoryComponent } from '../../Components/category/category.component';
+import { RequestService } from '../../services/request.service';
+import { environments } from '../../../environments/environments';
 
 @Component({
   selector: 'app-category-page',
   standalone: true,
-  imports: [BlogAllPostsComponent,CategoryComponent],
+  imports: [BlogAllPostsComponent, CategoryComponent],
   templateUrl: './category-page.component.html',
   styleUrls: ['./category-page.component.css', '../../Components/blog-all-posts/blog-all-posts.component.css']
 })
 
-export class CategoryPageComponent {
-  blogAllPosts: BlogAllPosts[] =[
-    {
-      id: '1',
-      image: 'assets/img/two-women.png',
-      header: 'STARTUP',
-      text_1: 'Design tips for designers that cover everything you need ',
-      text_2: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident.',
-    },
-    {
-      id: '2',
-      image: 'assets/img/two-women.png',
-      header: 'STARTUP',
-      text_1: 'Design tips for designers that cover everything you need ',
-      text_2: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident.',
-    },
-    {
-      id: '3',
-      image: 'assets/img/two-women.png',
-      header: 'STARTUP',
-      text_1: 'Design tips for designers that cover everything you need ',
-      text_2: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident.',
-    },
-    {
-      id: '4',
-      image: 'assets/img/two-women.png',
-      header: 'STARTUP',
-      text_1: 'Design tips for designers that cover everything you need ',
-      text_2: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident.',
-    }, 
-  ]
+export class CategoryPageComponent implements OnInit {
 
-  category: Category[] = [
-    {
-      id: '1',
-      image: 'assets/img/icon1.png',
-      header: 'Business',
-      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
-    },
-    {
-      id: '2',
-      image: 'assets/img/icon2.png',
-      header: 'Startup',
-      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
-    },
-    {
-      id: '3',
-      image: 'assets/img/icon3.png',
-      header: 'Economy',
-      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
-    },
-    {
-      id: '4',
-      image: 'assets/img/icon4.png',
-      header: 'Technology',
-      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
-    },
-  ];
+  blogPosts: BlogAllPosts[] = [];
+  category: Category[] = [];
+  constructor(public request: RequestService) { }
+
+  ngOnInit(): void {
+    this.request.getData<BlogAllPosts[]>(environments.BlogAllPosts.get).subscribe((data) => {
+      this.blogPosts = data.filter(blogPosts => blogPosts.id === 1 || blogPosts.id === 2 || blogPosts.id === 3 || blogPosts.id === 4)
+    }, (e) => {
+      console.log(e);
+    })
+
+    this.request.getData<Category[]>(environments.Category.get).subscribe((data) => {
+      this.category = data
+    })
+
+  }
 }

@@ -1,0 +1,130 @@
+
+.author-header {
+    background-color: #F4F0F8;
+    padding: 128px 0 0 0;
+}
+
+.author-header_block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.author-header_texts {
+    margin-left: 35px;
+}
+
+.author-header_texts>h1 {
+    color: #232536;
+    font-family: Sen;
+    font-size: clamp(24px, 5vw, 48px);
+    letter-spacing: -2px;
+    width: clamp(280px, 60vw, 669px);
+
+}
+
+.author-header_texts>p {
+    color: #6D6E76;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    width: clamp(280px, 60vw, 645px);
+    margin: 24px 0;
+}
+
+.author-header_icones>a>img {
+    margin: 5px;
+}
+
+.author-header_colors {
+    padding: 0 123px;
+    display: flex;
+    margin-top: 104px;
+}
+
+.author-header_yellow-block {
+    height: 24px;
+    background-color: #FFD050;
+    width: 70%;
+}
+
+.author-header_blue-block {
+    height: 24px;
+    background-color: #592EA9;
+    width: 30%;
+}
+
+.author-section-1 {
+    margin-top: 128px;
+}
+
+.author-section-1>h1 {
+    color: #232536;
+    font-family: Sen;
+    font-size: clamp(24px, 5vw, 48px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -2px;
+    margin-bottom: 64px;
+}
+
+.author-section-1>div>div {
+    display: flex;
+    margin: 64px 0 ;
+    flex-wrap: wrap;
+}
+
+.author-section-1>div>div>div>h3 {
+    color: var(--Purple, #592EA9);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.author-section-1>div>div>div>h2 {
+    color:  #232536;
+    font-family: Sen;
+    font-size: clamp(24px, 5vw, 36px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -2px;
+    width: clamp(280px, 60vw, 560px);
+    margin: 20px 0 16px;
+
+}
+.author-section-1>div>div>div>p {
+    color: #6D6E76;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    width: clamp(280px, 60vw, 580px);
+
+}
+.author-section-1>div>div>div{
+    margin-left: 32px;
+    padding: 56px 0;
+}
+
+@media screen and (max-width:530px) {
+
+    .author-header_colors {
+        display: none;
+    }
+    .author-header{
+        padding: 30px 0;
+    }
+    .author-header_texts{
+        text-align: center;
+        margin: 0;
+    }
+    
+}

@@ -117,7 +117,7 @@
             <h2>List of Authors</h2>
             <div class="section-6_display-flex">
                 <div>
-                    @for(item of authors;track item){
+                    @for(item of data; track item){
                     <app-authors [data]="item"></app-authors>
                     }
                 </div>

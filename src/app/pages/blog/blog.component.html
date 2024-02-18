@@ -27,7 +27,7 @@
             <div>
                 <h2>All posts</h2>
             </div>
-            @for(item of blogAllPosts; track item){
+            @for(item of data; track item){
                 <app-blog-all-posts [data]="item"></app-blog-all-posts>
             }
             <div class="section-1_prevbAndNextb">
@@ -39,7 +39,7 @@
         <section class="section-3">
             <h2>Choose A Category</h2>
             <div class="section-3_display-flex">
-                @for(item of category; track item){
+                @for(item of data2; track item){
                     <app-category [data]="item"></app-category>
                 }@empty {
                     <h2>there is no items</h2>

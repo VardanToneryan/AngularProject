@@ -30,27 +30,27 @@ export class HomeComponent implements OnInit {
 
   constructor(public request: RequestService) { }
 
-  data: AllPosts[] = [];
-  data2: Category[] = [];
-  data3: Authors[] = [];
+  posts: AllPosts[] = [];
+  categories: Category[] = [];
+  authors: Authors[] = [];
+
   ngOnInit(): void {
     this.request.getData<AllPosts[]>(environments.AllPosts.get).subscribe((data) => {
-      this.data = data;
+      this.posts = data;
     }, (e) => {
       console.log(e);
     })
 
     this.request.getData<Category[]>(environments.Category.get).subscribe((data) => {
-      this.data2 = data;
+      this.categories = data;
     }, (e) => {
       console.log(e);
     })
     this.request.getData<Authors[]>(environments.Authors.get).subscribe((data) => {
-      this.data3 = data;
+      this.authors = data.filter(author => author.id === 1 || author.id === 2 || author.id === 3 || author.id === 4);
     });
+
   }
-
-
   scroll(): void {
     window.scrollTo(0, 0)
   }

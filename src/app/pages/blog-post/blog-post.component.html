@@ -89,34 +89,13 @@
             <h2>What to read next</h2>
             <div class="blogPost-section-3_display">
                 <div>
-                    <img src="assets/img/two-women-in-front-of-dry-erase-board-1181533.png" alt="This is a image">
-                    <h3>By <span>John Doe</span> l Aug 23, 2021 </h3>
-                    <h2>A UX Case Study Creating a Studious Environment for Students: </h2>
-                    <p>
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur.
-                        Excepteur sint occaecat cupidatat non proident.
-                    </p>
-                </div>
-                <div>
-                    <img src="assets/img/photo-of-people-doing-handshakes-3183197.png" alt="This is a image">
-                    <h3>By <span>John Doe</span> l Aug 23, 2021 </h3>
-                    <h2>A UX Case Study Creating a Studious Environment for Students: </h2>
-                    <p>
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur.
-                        Excepteur sint occaecat cupidatat non proident.
-                    </p>
-                </div>
-                <div>
-                    <img src="assets/img/photo-of-woman-looking-at-man-3183173.png" alt="This is a image">
-                    <h3>By <span>John Doe</span> l Aug 23, 2021 </h3>
-                    <h2>A UX Case Study Creating a Studious Environment for Students: </h2>
-                    <p>
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur.
-                        Excepteur sint occaecat cupidatat non proident.
-                    </p>
+                    @for(item of blogPosts; track item){
+                        <app-blog-all-posts [titleStyle]="{width: 'clamp(280px ,50vw, 405px)'}"
+                            [styles]="{width: 'clamp(280px ,50vw, 405px)'}"
+                            [mainBlock]=" {flexDirection: 'column', width: 'clamp(280px ,50vw, 405px)', margin: '0 10px'}"
+                            [data]="item">
+                        </app-blog-all-posts>
+                    }
                 </div>
             </div>
         </section>

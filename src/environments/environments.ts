@@ -3,10 +3,13 @@ export const environments = {
     AllPosts: {
         get: host + 'AllPosts'
     },
-    Category:{
+    Category: {
         get: host + 'Category'
     },
-    Authors:{
-        get:host + 'Authors'
+    Authors: {
+        get: host + 'Authors'
+    },
+    BlogAllPosts: {
+        get: host + 'BlogAllPosts'
     }
 } 

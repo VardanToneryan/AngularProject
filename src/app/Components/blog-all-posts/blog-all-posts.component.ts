@@ -14,5 +14,6 @@ export class BlogAllPostsComponent {
   // @Input('styles') styles: any = {};
   @Input('styles') styles!: {};
   @Input('titleStyle') titleStyle!: {};
+  @Input('mainBlock') mainBlock!: {};
 
 }
