@@ -45,7 +45,7 @@
                 </div>
                 <div class="section-1_secondDiv_blocks">
                     @for(item of posts; track item){
-                    <app-all-posts [data]="item"></app-all-posts>
+                    <app-all-posts [allPosts]="item"></app-all-posts>
                     }@empty {
                     <h2>There are no items</h2>
                     }
@@ -157,7 +157,7 @@
         <!-- section-5 -->
         <!-- section-6 -->
 
-        <section class="section-6">
+        <!-- <section class="section-6">
             <div class="section-6_firstDiv">
                 <h3>TESTIMONIALS</h3>
                 <h2>What people say about our blog</h2>
@@ -168,25 +168,117 @@
             </div>
             <div class="section-6_secondDiv">
                 <h4>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
+                    {{testimonials[currentIndex].description}}
                 </h4>
                 <div>
-                    <img src="assets/img/Profilepicture.png" alt="This is a profile photo">
                     <div>
-                        <h4>Jonathan Vallem</h4>
-                        <h3>New york, USA</h3>
+                        <img [src]="testimonials[currentIndex].profilePicture" alt="This is a profile photo">
+                        <div>
+                            <h4>{{ testimonials[currentIndex].name }}</h4>
+                            <h3>{{ testimonials[currentIndex].location }}</h3>
+                        </div>
                     </div>
-                    <button class="section-6_backButton">
-                        <img src="assets/img/Backbutton.png" alt="This is a Back Button">
-                    </button>
-                    <button>
-                        <img src="assets/img/NextButton.png" alt="This is a Next button">
-                    </button>
+                    <div>
+                        <button class="section-6_backButton" (click)="prevTestimonial()">
+                            <img src="assets/img/Backbutton.png" alt="This is a Back Button">
+                        </button>
+                        <button (click)="nextTestimonial()">
+                            <img src="assets/img/NextButton.png" alt="This is a Next button">
+                        </button>
+                    </div>
                 </div>
             </div>
-        </section>
+        </section> -->
+
+<div class="swiper">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <section class="section-6">
+                    <div class="section-6_firstDiv">
+                        <h3>TESTIMONIALs</h3>
+                        <h2>What people say about our blog</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor.
+                        </p>
+                    </div>
+                    <div class="section-6_secondDiv">
+                        <h4>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua.
+                        </h4>
+                        <div>
+                            <img src="assets/img/Profilepicture.png" alt="This is a profile photo">
+                            <div>
+                                <h4>Jonathan Vallem</h4>
+                                <h3>New york, USA</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="swiper-slide">
+                <section class="section-6">
+                    <div class="section-6_firstDiv">
+                        <h3>TESTIMONIALs</h3>
+                        <h2>What people say about our blog</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor.
+                        </p>
+                    </div>
+                    <div class="section-6_secondDiv">
+                        <h4>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua.
+                        </h4>
+                        <div>
+                            <img src="assets/img/Profilepicture.png" alt="This is a profile photo">
+                            <div>
+                                <h4>Jonathan Vallem</h4>
+                                <h3>New york, USA</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+            <div class="swiper-slide">
+                <section class="section-6">
+                    <div class="section-6_firstDiv">
+                        <h3>TESTIMONIALs</h3>
+                        <h2>What people say about our blog</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor.
+                        </p>
+                    </div>
+                    <div class="section-6_secondDiv">
+                        <h4>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua.
+                        </h4>
+                        <div>
+                            <img src="assets/img/Profilepicture.png" alt="This is a profile photo">
+                            <div>
+                                <h4>Jonathan Vallem</h4>
+                                <h3>New york, USA</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <button class="swiper-button-prev" (click)="prevSlide()"></button>
+        <button class="swiper-button-next" (click)="nextSlide()"></button>
+    </div>
+</div>
 
         <app-join-our-team></app-join-our-team>
     </div>

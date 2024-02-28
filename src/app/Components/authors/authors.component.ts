@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { Authors } from '../../models/authors';
 
 @Component({
   selector: 'app-authors',
@@ -9,5 +10,5 @@ import { RouterModule } from '@angular/router';
   styleUrl: './authors.component.css'
 })
 export class AuthorsComponent {
-  @Input('data') data: any; 
+  @Input('data') data!: Authors; 
 }
