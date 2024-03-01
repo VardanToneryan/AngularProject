@@ -31,7 +31,7 @@ export const routes: Routes = [
                 title: 'Blog'
             },
             {
-                path: 'blog-post',
+                path: 'blog-post/:id',
                 component: BlogPostComponent,
                 title: 'Blog-post'
             },
@@ -73,3 +73,4 @@ export const routes: Routes = [
         title: 'Page Not Found'
     }
 ]
+

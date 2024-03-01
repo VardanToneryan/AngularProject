@@ -5,34 +5,45 @@ import { JoinOurTeamComponent } from '../../Components/join-our-team/join-our-te
 import { RequestService } from '../../services/request.service';
 import { environments } from '../../../environments/environments';
 import { CommonModule } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
+import { Authors } from '../../models/authors';
+
+
 @Component({
   selector: 'app-blog-post',
   standalone: true,
-  imports: [BlogAllPostsComponent,JoinOurTeamComponent,CommonModule],
+  imports: [BlogAllPostsComponent, JoinOurTeamComponent, CommonModule],
   templateUrl: './blog-post.component.html',
   styleUrl: './blog-post.component.css'
 })
-export class BlogPostComponent  implements OnInit{
-
+export class BlogPostComponent implements OnInit {
   blogPosts: BlogAllPosts[] = [];
-  constructor(public request: RequestService){}
+  id!: string;
+  authors!: Authors | undefined
 
-
-  ngOnInit(): void {
-    this.request.getData<BlogAllPosts[]>(environments.BlogAllPosts.get).subscribe((data)=>{
-      this.blogPosts = data.filter(blog => blog.id === 1 || blog.id === 2 || blog.id === 3);
-    }, (e)=>{
-      console.log(e);
-    })  
+  constructor(public request: RequestService, public activateRoute: ActivatedRoute) {
+    this.id = activateRoute.snapshot.params['id'];
   }
 
-  // blogAllPosts: BlogAllPosts[] = [
-  //   {
-  //     id: '1',
-  //     image: 'assets/img/two-women-in-front-of-dry-erase-board-1181533.png',
-  //     header: 'By <span>John Doe</span> l Aug 23, 2021 ',
-  //     text_1: 'A UX Case Study Creating a Studious Environment for Students: ',
-  //     text_2: ' Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
-  //   }
-  // ]
+  ngOnInit(): void {
+
+    this.request.getData<BlogAllPosts[]>(`${environments.BlogAllPosts.get}/?_start=0&_limit=3`).subscribe((data) => {
+      this.blogPosts = data
+    }, (e) => {
+      console.log(e);
+    });
+    this.loadAuthors()
+  }
+  
+  loadAuthors() {
+    this.request.getData<Authors>(`${environments.Authors.get}/${this.id}`).subscribe(
+      (data) => {
+        this.authors = data;
+      },
+      (error) => {
+        console.error( error);
+      }
+    );
+  }
+  
 }

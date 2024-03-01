@@ -9,7 +9,5 @@ import { RouterModule } from '@angular/router';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-  goUp(): void {
-    window.scrollTo(0,0)
-  }
+
 }

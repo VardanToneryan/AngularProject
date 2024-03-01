@@ -1,23 +1,20 @@
 <header class="blog-header">
     <div class="container">
         <div class="header-display">
+            @for(item of featuredPost; track item){
             <div>
                 <h3>Featured Post</h3>
                 <h2>Step-by-step guide to choosing great font pairs</h2>
-                <p>By <span>John Doe</span> l May 23, 2022 </p>
+                <p>By <span>{{item.name}}</span> l May 23, 2022 </p>
                 <span>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                    Excepteur sint occaecat cupidatat non proident.
+                    {{item.description}}
                 </span>
-
                 <a class="yellow-button" routerLink="/layout/blog-post">Read More ></a>
-
             </div>
             <div class="blog-header_image">
-                <img src="assets/img/man-in-white-dress-shirt-sitting-on-black-rolling-chair-while-facing-black-computer-set-and-smiling-840996.png"
-                    alt="This ia a image">
+                <img src="{{item.image}}" alt="This ia a image">
             </div>
+            }
         </div>
     </div>
 </header>
@@ -27,26 +24,28 @@
             <div>
                 <h2>All posts</h2>
             </div>
-            @for(item of data; track item){
-                <app-blog-all-posts [data]="item"></app-blog-all-posts>
+            @for(item of BlogAllPosts; track item){
+            <app-blog-all-posts [data]="item"></app-blog-all-posts>
             }
-            <div class="section-1_prevbAndNextb">
-                <!-- <h4>< Prev</h4> -->
+            <div class="section-1_prevbAndNextb">  
                 <h4>&lt; Prev</h4>
                 <h3>Next ></h3>
             </div>
         </section>
-        <section class="section-3">
+        <section class="section-2">
             <h2>Choose A Category</h2>
-            <div class="section-3_display-flex">
-                @for(item of data2; track item){
-                    <app-category [data]="item"></app-category>
+            <div class="section-2_display-flex">
+                @for(item of Category; track item){
+                <app-category [data]="item"></app-category>
                 }@empty {
-                    <h2>there is no items</h2>
+                <h2>there is no items</h2>
                 }
             </div>
         </section>
         <app-join-our-team></app-join-our-team>
     </div>
 </main>
+
+
+
 <router-outlet></router-outlet>

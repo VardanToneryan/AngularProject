@@ -11,5 +11,8 @@ export const environments = {
     },
     BlogAllPosts: {
         get: host + 'BlogAllPosts'
+    },
+    JoinOurTeam: {
+        get: host + 'JoinOurTeam'
     }
 } 

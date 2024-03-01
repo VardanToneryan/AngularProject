@@ -1,3 +1,4 @@
+@import url('../../../../node_modules/@angular/material/prebuilt-themes/indigo-pink.css');
 .BlogPost_header {
     padding: 128px 0 64px;
 }
@@ -17,6 +18,7 @@
     color: #592EA9;
     font-family: Sen;
     font-size: 28px;
+    margin: 0;
 }
 
 .blogPost-image {
@@ -33,17 +35,18 @@
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
+    margin: 0;
 }
 
 .BlogPost_header h2 {
-    color: #232536;
-    font-family: Sen;
     font-size: clamp(36px, 5vw, 48px);
     line-height: 64px;
     letter-spacing: -2px;
     width: clamp(280px, 50vw, 768px);
     margin: 24px 0 34px;
-    /* text-align: center; */
+    color: rgb(35, 37, 54);
+    font-family: Sen;
+    font-weight: 700;
 }
 
 .BlogPost_header h4 {
@@ -71,10 +74,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 0;
     /* padding: 0 219px; */
 }
 
-.blogPost_section-2 h2 {
+/* .blogPost_section-2 > div > div> h2 {
     color: #232536;
     font-family: Sen;
     font-size: clamp(24px, 5vw, 36px);
@@ -83,6 +87,7 @@
     margin: 48px 0 0;
     width: clamp(280px, 50vw, 843px);
 }
+
 
 .blogPost_section-2 p {
     color: #6D6E76;
@@ -94,6 +99,12 @@
     margin: 16px 0 0;
     width: clamp(280px, 50vw, 843px);
 
+} */
+.blogPost_section-2 div h2 {
+    font-family: 'Sen', sans-serif;
+}
+.mat-typography h2{
+    font-size: 72px !important;
 }
 
 .blogPost_section-2 ul>li {

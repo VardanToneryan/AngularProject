@@ -8,33 +8,51 @@ import { CategoryComponent } from '../../Components/category/category.component'
 import { JoinOurTeamComponent } from '../../Components/join-our-team/join-our-team.component';
 import { RequestService } from '../../services/request.service';
 import { environments } from '../../../environments/environments';
+import { Authors } from '../../models/authors';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 
 
 @Component({
   selector: 'app-blog',
   standalone: true,
-  imports: [RouterModule, BlogAllPostsComponent, CommonModule, CategoryComponent, JoinOurTeamComponent],
+  imports: [RouterModule, BlogAllPostsComponent, CommonModule, CategoryComponent, JoinOurTeamComponent, MatPaginatorModule],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css'
 })
 export class BlogComponent implements OnInit {
+  BlogAllPosts: BlogAllPosts[] = []
+  Category: Category[] = []
+  featuredPost!: Authors[];
+  currentPage = 0;
+  limitIndex = 5;
+  totalItems!: number;
 
   constructor(public request: RequestService) { }
 
-  data: BlogAllPosts[] = []
-  data2: Category[]= []
   ngOnInit(): void {
-    this.request.getData<BlogAllPosts[]>(environments.BlogAllPosts.get).subscribe((data) => {
-      this.data = data
+    this.LoadBlogAllPosts()
+    this.LoadCategory()
+    this.LoadFeaturedPost()
+  }
+
+  LoadBlogAllPosts() {
+    this.request.getData<BlogAllPosts[]>(`${environments.BlogAllPosts.get}?_start=0&_limit=5`).subscribe((data) => {
+      this.BlogAllPosts = data
     }, (e) => {
       console.log(e);
     })
-
-    this.request.getData<Category[]>(environments.Category.get).subscribe((data)=>{
-      this.data2 = data;
-    },(e)=>{
+  }
+  LoadCategory() {
+    this.request.getData<Category[]>(environments.Category.get).subscribe((data) => {
+      this.Category = data;
+    }, (e) => {
       console.log(e);
+    })
+  }
+  LoadFeaturedPost() {
+    this.request.getData<Authors[]>(`${environments.Authors.get}?_start=8&_end=9`).subscribe((data) => {
+      this.featuredPost = data
     })
   }
 }

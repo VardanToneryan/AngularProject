@@ -19,7 +19,7 @@ export class AboutUsComponent  implements OnInit {
   constructor(public request: RequestService){}
 
   ngOnInit(): void{
-    this.request.getData<Authors[]>(environments.Authors.get).subscribe((data)=>{
+    this.request.getData<Authors[]>(`${environments.Authors.get}?_start=0&_limit=8`).subscribe((data)=>{
       this.data = data;
     },(e)=>{
       console.log(e);

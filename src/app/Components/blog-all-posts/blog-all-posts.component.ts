@@ -11,7 +11,6 @@ import { NgStyle } from '@angular/common';
 })
 export class BlogAllPostsComponent {
   @Input('data') data!: BlogAllPosts;
-  // @Input('styles') styles: any = {};
   @Input('styles') styles!: {};
   @Input('titleStyle') titleStyle!: {};
   @Input('mainBlock') mainBlock!: {};

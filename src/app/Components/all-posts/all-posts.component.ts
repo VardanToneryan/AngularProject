@@ -12,9 +12,4 @@ import { AllPosts } from '../../models/allPosts';
 })
 export class AllPostsComponent {
   @Input('allPosts') allPosts!: AllPosts;
-  // @Input('data') data: any; 
-  
-  scroll(){
-    window.scrollTo(0,0)
-  }
 }

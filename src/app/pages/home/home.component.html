@@ -11,7 +11,7 @@
                 nulla pariatur. Excepteur sint occaecat
                 cupidatat non proident.
             </span>
-            <a class="yellow-button" href="#">Read More ></a>
+            <a class="yellow-button" routerLink="/layout/blog-post">Read More ></a>
         </div>
     </div>
 </header>
@@ -21,27 +21,25 @@
             <div class="section-1_firstDiv">
                 <h2>Featured Post</h2>
                 <div class="section-1_firstDiv_border">
-                    <div>
-                        <img src="assets/img/white-concrete-building.png" alt="This is a image">
-                        <p>By<span>John Deo</span>l May 23, 2022</p>
-                        <h3>
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod tempor.
-                        </h3>
-                        <p>
-                            Duis aute irure dolor in reprehenderit
-                            in voluptate velit esse cillum dolore eu
-                            fugiat nulla pariatur. Excepteur sint
-                            occaecat cupidatat non proident.
-                        </p>
-                        <a class="yellow-button" routerLink="/layout/blog" (click)="scroll()">Read More ></a>
-                    </div>
+                    @for(item of featuredPost; track item){
+                        <div>
+                            <img src="{{item.featuredPost}}" alt="This is a image">
+                            <p>By<span>{{item.name}}</span> l May 23, 2022</p>
+                            <h3>
+                               {{item.title}}
+                            </h3>
+                            <p>
+                                {{item.description}}
+                            </p>
+                            <a class="yellow-button" routerLink="/layout/blog">Read More ></a>
+                        </div>
+                    }
                 </div>
             </div>
             <div class="section-1_secondDiv">
                 <div class="section-1_secondDiv_div1">
                     <h2>All Posts</h2>
-                    <a (click)="scroll()" routerLink="/layout/blog">View all</a>
+                    <a routerLink="/layout/blog">View all</a>
                 </div>
                 <div class="section-1_secondDiv_blocks">
                     @for(item of posts; track item){
@@ -114,7 +112,7 @@
                         aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                         ullamco laboris nisi ut aliquip.
                     </p>
-                    <a href="#">Discover our story ></a>
+                    <a routerLink="/layout/about-us">Discover our story ></a>
                 </div>
             </div>
         </section>
@@ -126,7 +124,7 @@
             <h2>List of Authors</h2>
             <div class="section-5_display-flex">
                 @for(item of authors; track item){
-                <app-authors [data]="item"></app-authors>
+                <app-authors [item]="item"></app-authors>
                 }@empty {
                 <h2>There are no items</h2>
                 }
@@ -135,19 +133,19 @@
                 <p>We are</p>
                 <div>
                     <h3>Featured in</h3>
-                    <a href="#">
+                    <a>
                         <img src="assets/img/Logo1.png" alt="This is a logo">
                     </a>
-                    <a href="#">
+                    <a>
                         <img src="assets/img/Logo2.png" alt="This is a logo">
                     </a>
-                    <a href="#">
+                    <a>
                         <img src="assets/img/Logo3.png" alt="This is a logo">
                     </a>
-                    <a href="#">
+                    <a>
                         <img src="assets/img/Logo4.png" alt="This is a logo">
                     </a>
-                    <a href="#">
+                    <a>
                         <img src="assets/img/Logo5.png" alt="This is a logo">
                     </a>
                 </div>
@@ -157,130 +155,48 @@
         <!-- section-5 -->
         <!-- section-6 -->
 
-        <!-- <section class="section-6">
-            <div class="section-6_firstDiv">
-                <h3>TESTIMONIALS</h3>
-                <h2>What people say about our blog</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor.
-                </p>
-            </div>
-            <div class="section-6_secondDiv">
-                <h4>
-                    {{testimonials[currentIndex].description}}
-                </h4>
-                <div>
-                    <div>
-                        <img [src]="testimonials[currentIndex].profilePicture" alt="This is a profile photo">
-                        <div>
-                            <h4>{{ testimonials[currentIndex].name }}</h4>
-                            <h3>{{ testimonials[currentIndex].location }}</h3>
-                        </div>
+
+        <div class="swiper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    @for(author of authors; track author){
+                    <div class="swiper-slide">
+                        <section class="section-6">
+
+                            <div class="section-6_firstDiv">
+                                <h3>TESTIMONIALs</h3>
+                                <h2>What people say about our blog</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                            <div class="section-6_secondDiv">
+                                <h4>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua.
+                                </h4>
+                                <div>
+                                    <img src={{author.image}} alt="This is a profile photo">
+                                    <div>
+                                        <h4 routerLink="/layout/authors">{{author.name}}</h4>
+                                        <h3>New york, USA</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
-                    <div>
-                        <button class="section-6_backButton" (click)="prevTestimonial()">
-                            <img src="assets/img/Backbutton.png" alt="This is a Back Button">
-                        </button>
-                        <button (click)="nextTestimonial()">
-                            <img src="assets/img/NextButton.png" alt="This is a Next button">
-                        </button>
-                    </div>
+                    }
                 </div>
-            </div>
-        </section> -->
-
-<div class="swiper">
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <section class="section-6">
-                    <div class="section-6_firstDiv">
-                        <h3>TESTIMONIALs</h3>
-                        <h2>What people say about our blog</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod tempor.
-                        </p>
-                    </div>
-                    <div class="section-6_secondDiv">
-                        <h4>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
-                        </h4>
-                        <div>
-                            <img src="assets/img/Profilepicture.png" alt="This is a profile photo">
-                            <div>
-                                <h4>Jonathan Vallem</h4>
-                                <h3>New york, USA</h3>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <div class="swiper-slide">
-                <section class="section-6">
-                    <div class="section-6_firstDiv">
-                        <h3>TESTIMONIALs</h3>
-                        <h2>What people say about our blog</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod tempor.
-                        </p>
-                    </div>
-                    <div class="section-6_secondDiv">
-                        <h4>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
-                        </h4>
-                        <div>
-                            <img src="assets/img/Profilepicture.png" alt="This is a profile photo">
-                            <div>
-                                <h4>Jonathan Vallem</h4>
-                                <h3>New york, USA</h3>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-
-            <div class="swiper-slide">
-                <section class="section-6">
-                    <div class="section-6_firstDiv">
-                        <h3>TESTIMONIALs</h3>
-                        <h2>What people say about our blog</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod tempor.
-                        </p>
-                    </div>
-                    <div class="section-6_secondDiv">
-                        <h4>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
-                        </h4>
-                        <div>
-                            <img src="assets/img/Profilepicture.png" alt="This is a profile photo">
-                            <div>
-                                <h4>Jonathan Vallem</h4>
-                                <h3>New york, USA</h3>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <button class="swiper-button-prev" (click)="prevSlide()"></button>
+                <button class="swiper-button-next" (click)="nextSlide()"></button>
             </div>
         </div>
-        <button class="swiper-button-prev" (click)="prevSlide()"></button>
-        <button class="swiper-button-next" (click)="nextSlide()"></button>
-    </div>
-</div>
 
         <app-join-our-team></app-join-our-team>
     </div>
 </main>
 <app-footer></app-footer>
+
+

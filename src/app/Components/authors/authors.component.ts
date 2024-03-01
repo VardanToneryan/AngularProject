@@ -10,5 +10,5 @@ import { Authors } from '../../models/authors';
   styleUrl: './authors.component.css'
 })
 export class AuthorsComponent {
-  @Input('data') data!: Authors; 
+  @Input('item') item!: Authors;
 }

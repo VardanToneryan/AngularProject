@@ -1,13 +1,11 @@
-<section class="section-7">
-    <div>
-
-        <h2>Join our team to be a part of our story</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt.
-        </p>
-
-        <a class="joinNowButton" routerLink="/layout/contact">Join Now</a>
-
-    </div>
-</section>
+@for(item of joinOurTeam; track item){
+    <section class="section-7">
+        <div>
+            <h2>{{item.title}}</h2>
+            <p>{{item.description}}</p>
+            <a class="joinNowButton" routerLink="/layout/contact">Join Now</a>
+        </div>
+    </section>
+}@empty {
+    <h2>There is not items</h2>
+}

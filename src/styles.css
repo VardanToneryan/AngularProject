@@ -12,7 +12,6 @@ section {
 }
 
 .container {
-    /* width: 1370px; */
     width: clamp(90%, 5vw, 1370px);
     margin: 0 auto !important;
 }
@@ -26,7 +25,6 @@ section {
 .yellow-button {
     padding: 16px 48px;
     display: inline-block;
-    /* margin: 48px 0 0; */
     margin-top: clamp(20px, 4vw, 48px);
     background-color: #FFD050;
     border: none;
@@ -35,13 +33,6 @@ section {
     font-family: Sen;
     font-size: 18px;
     font-weight: 700;
-}
-
-
-@media screen and (max-width:1370px) {
-    .yellow-button {
-        /* margin-top: 80px; */
-    }
 }
 
 @media screen and (max-width:1230px) {
@@ -85,3 +76,6 @@ section {
     box-shadow: inset 0 0 5px #808080b8;
     border-radius: 10px;
 }
+
+/* html, body { height: 100%; } */
+/* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */

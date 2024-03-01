@@ -13,7 +13,4 @@ export class NavComponent {
   scrollDown():void{
     window.scrollTo(0,7000)
   }
-  goUp():void{
-    window.scrollTo(0,0)
-  }
 }

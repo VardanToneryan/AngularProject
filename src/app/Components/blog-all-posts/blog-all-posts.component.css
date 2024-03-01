@@ -28,6 +28,9 @@
 .section-1_block>div>h2 {
     color: #232536;
     font-family: Sen;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -2px;
     font-size: 36px;
     letter-spacing: -2px;
     margin: 20px 0 16px;

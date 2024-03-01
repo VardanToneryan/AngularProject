@@ -22,6 +22,7 @@
     width: clamp(280px,50vw,624px);
     color: #232536;
     font-family: Sen;
+    font-weight: 700;
     font-size: 36px;
     line-height: 48px;
     letter-spacing: -2px;
@@ -59,6 +60,7 @@
 .section-1>div>h2 {
     color: #232536;
     font-family: Sen;
+    font-weight: 700;
     font-size: clamp(36px,50vw,48px);
     line-height: 64px;
     letter-spacing: -2px;
@@ -79,6 +81,7 @@
     font-size: 24px;
     line-height: 32px;
     margin: 0 10px;
+    cursor: pointer;
 }
 
 .section-1>div>h3 {
@@ -89,8 +92,9 @@
     line-height: 40px;
     letter-spacing: -1px;
     margin: 0 10px;
+    cursor: pointer;
 }
-.section-3>h2 {
+.section-2>h2 {
     text-align: center;
     color: #232536;
     font-family: Sen;
@@ -99,7 +103,7 @@
     margin: 0 0 48px 0;
 }
 
-.section-3_display-flex {
+.section-2_display-flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -113,14 +117,6 @@
     .section-1_block {
         margin-top: 0px;
         justify-content: center;
-        text-align: center;
-    }
-
-    .section-4_display-flex {
-        justify-content: center;
-    }
-
-    .section-4>h2 {
         text-align: center;
     }
     .header-display {
