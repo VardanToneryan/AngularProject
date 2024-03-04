@@ -3,6 +3,10 @@
     padding: 40px 28px;
     text-align: center;
     margin: 7px;
+    transition: 0.5s;
+}
+.section-5_display-flex>div:hover{
+    background-color: rgb(251, 246, 234);
 }
 
 .section-5_display-flex>div>h3 {

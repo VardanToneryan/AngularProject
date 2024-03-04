@@ -19,7 +19,9 @@ import { Authors } from '../../models/authors';
 export class BlogPostComponent implements OnInit {
   blogPosts: BlogAllPosts[] = [];
   id!: string;
-  authors!: Authors | undefined
+  authors!: Authors;
+  arrayAuthors: Authors[] = [];
+
 
   constructor(public request: RequestService, public activateRoute: ActivatedRoute) {
     this.id = activateRoute.snapshot.params['id'];
@@ -34,16 +36,17 @@ export class BlogPostComponent implements OnInit {
     });
     this.loadAuthors()
   }
-  
+
   loadAuthors() {
-    this.request.getData<Authors>(`${environments.Authors.get}/${this.id}`).subscribe(
-      (data) => {
-        this.authors = data;
-      },
-      (error) => {
-        console.error( error);
-      }
+    this.request.getData<Authors>(`${environments.Authors.get}/${this.id}`).subscribe((data) => {
+      this.authors = data;
+      this.arrayAuthors.push(this.authors);
+      
+    }, (e) => {
+      console.error(e);
+    }
     );
   }
   
+
 }

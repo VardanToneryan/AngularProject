@@ -15,5 +15,15 @@ export interface Authors {
   date: string;
   description: string;
   featuredPost: string;
-  aboutAuthor: string;
+  about_Author_Title: string;
+  about_Author_Title2: string;
+  about_Author_Title3: string;
+  about_Author_description_1: string;
+  about_Author_description_2: string;
+  about_Author_description_3: string;
+  about_Author_description_4: string;
+  about_Author_description_5: string;
+  list_1: string;
+  list_2: string;
+  list_3: string;
 }

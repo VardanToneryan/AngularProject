@@ -1,0 +1,28 @@
+<div class="leftBlock">
+  <h2>Admin</h2>
+
+  <div>
+    <h3 (click)="toggleCategory()" [routerLink]="['/AdminLayout/Admin-categories']"> <img
+        src="assets/img/category-Icon.png" alt="icon">Category
+    </h3>
+    <h3 (click)="toggleAuthor()" [routerLink]="['/AdminLayout/Admin-Authors']"> <img src="assets/img/Authors-icon.png"
+        alt="icon">Authors
+    </h3>
+    <h3 (click)="toggleAllposts()" [routerLink]="['/AdminLayout/Admin-blogAllPosts']"> <img
+        src="assets/img/post-icon.png" alt="icon">BlogAllPost
+    </h3>
+  </div>
+</div>
+<div class="layout">
+
+  <nav>
+    <button mat-raised-button>Log Out</button>
+    <img src="assets/img/content-baker-with-delicious-puff-in-cafeteria-6205509.png" alt="icon">
+  </nav>
+
+
+  <app-admin-categories *ngIf="clickCategory && !clickAuthor && !clickAllposts"></app-admin-categories>
+  <app-admin-authors *ngIf="clickAuthor && !clickCategory  && !clickAllposts"></app-admin-authors>
+  <app-admin-blog-all-posts *ngIf="clickAllposts && !clickAuthor && !clickCategory"></app-admin-blog-all-posts>
+
+</div>

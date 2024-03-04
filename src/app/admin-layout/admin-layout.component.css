@@ -1,0 +1,62 @@
+.layout {
+    padding-left: 300px;
+}
+
+nav {
+    border: 1px solid;
+    height: 80px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+nav img {
+    width: 50px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.leftBlock {
+    background-color: rgb(48 60 84);
+    height: 100vh;
+    width: 300px;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+}
+
+h2 {
+    font-size: 36px;
+    color: rgb(172 177 185);
+
+}
+
+.leftBlock>div>h3 {
+    color: rgb(172 177 185);
+    background-color: #3c4b64;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    cursor: pointer;
+}
+
+.leftBlock>div>h3>img {
+    width: 20px;
+    margin: 0 10px;
+}
+
+
+.editButton {
+    padding: 10px 30px;
+}
+
+.DeleteButton {
+    padding: 10px 30px;
+}

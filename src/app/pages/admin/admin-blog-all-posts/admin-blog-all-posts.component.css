@@ -1,0 +1,14 @@
+.editButton {
+    padding: 10px 30px;
+}
+
+.DeleteButton {
+    padding: 10px 30px;
+}
+
+table {
+    max-width: 1000px;
+    min-width: clamp(280px, 72vw, 90%);
+    margin:  20px;
+    overflow-x: scroll;
+}

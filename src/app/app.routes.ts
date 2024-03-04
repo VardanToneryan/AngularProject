@@ -9,6 +9,11 @@ import { BlogPostComponent } from './pages/blog-post/blog-post.component';
 import { CategoryPageComponent } from './pages/category-page/category-page.component';
 import { LayoutComponent } from './layout/layout.component';
 import { AuthorPageComponent } from './pages/author-page/author-page.component';
+import { LogInComponent } from './pages/log-in/log-in.component';
+import { AdminLayoutComponent } from './admin-layout/admin-layout.component';
+import { AdminCategoriesComponent } from './pages/admin/admin-categories/admin-categories.component';
+import { AdminAuthorsComponent } from './pages/admin/admin-authors/admin-authors.component';
+import { AdminBlogAllPostsComponent } from './pages/admin/admin-blog-all-posts/admin-blog-all-posts.component';
 
 export const routes: Routes = [
     {
@@ -59,11 +64,33 @@ export const routes: Routes = [
                 path: 'pravacy-policy',
                 component: PravacyPolicyComponent,
                 title: 'Pravacy Policy'
+            }
+        ]
+    },
+    {
+        path: 'log-in',
+        component: LogInComponent,
+        title: 'Log In'
+    },
+
+    {
+        path: 'AdminLayout',
+        component: AdminLayoutComponent,
+        children: [
+            {
+                path: 'Admin-categories',
+                component: AdminCategoriesComponent,
+                title: 'Admin Categories'
             },
             {
-                path: '**',
-                component: PageNotFoundComponent,
-                title: 'Page Not Found'
+                path: 'Admin-Authors',
+                component: AdminAuthorsComponent,
+                title: 'Admin Authors'
+            },
+            {
+                path: 'Admin-blogAllPosts',
+                component: AdminBlogAllPostsComponent,
+                title: 'Admin Blog All Posts'
             }
         ]
     },

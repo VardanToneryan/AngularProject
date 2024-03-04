@@ -1,36 +1,47 @@
-<!-- @for(item of authors;track item){
-    <h2>{{item.name}}</h2>
-} -->
-
-
 <header class="BlogPost_header">
+    @for(item of arrayAuthors; track item){
     <div class="container">
         <div class="blog-header_display">
             <div class="blog-header_firstDiv">
-                <img class="header-firstImg" [src]="authors?.image" alt="This is a image">
+                <img class="header-firstImg" [src]="item.image" alt="This is a image">
                 <div>
-                    <h3>{{authors?.name }}</h3>
-                    <p>{{authors?.date}}</p>
+                    <h3>{{item.name}}</h3>
+                    <p>{{item.date}}</p>
                 </div>
             </div>
-            <h2>{{authors?.slogan}}</h2>
+            <h2>{{item.slogan}}</h2>
             <div class="blog-header_secondDiv">
-                <img [src]="authors?.categoryeIcon" alt="This is a icone">
-                <h4>{{authors?.category}}</h4>
+                <img [src]="item.categoryeIcon" alt="This is a icone">
+                <h4>{{item.category}}</h4>
             </div>
 
         </div>
-        <img class="blogPost-image" [src]="authors?.mainImage"
-            alt="This is a photo">
+        <img class="blogPost-image" [src]="item.mainImage" alt="This is a photo">
     </div>
+    }
 </header>
 
 <main>
     <div class="container">
         <section class="blogPost_section-2">
-            <div [ngStyle]="{ 'width': 'clamp(280px, 50vw, 843px)', 'fontFamily': 'Inter'}" [innerHTML]="authors?.aboutAuthor"></div>
+            @for(item of arrayAuthors; track item){
+            <div [ngStyle]="{ 'width': 'clamp(280px, 50vw, 843px)', 'fontFamily': 'Inter'}">
+                <h2>{{authors.about_Author_Title}}</h2>
+                <p>{{authors.about_Author_description_1}}</p>
+                <h2>{{authors.about_Author_Title2}}</h2>
+                <p>{{authors.about_Author_description_2}}</p>
+                <p>{{authors.about_Author_description_3}}</p>
+                <ul>
+                    <li>{{authors.list_1}}</li>
+                    <li>{{authors.list_2}}</li>
+                    <li>{{authors.list_3}}</li>
+                </ul>
+                <p>{{authors.about_Author_description_4}}</p>
+                <h2>{{authors.about_Author_Title3}}</h2>
+                <p>{{authors.about_Author_description_5}}</p>
+            </div>
+            }
         </section>
-        
         <!-- section-2 -->
         <!-- section-3 -->
         <section class="blogPost_section-3">
@@ -39,9 +50,10 @@
                 <div>
                     @for(item of blogPosts; track item){
                     <app-blog-all-posts [titleStyle]="{width: 'clamp(280px ,50vw, 405px)'}"
-                        [styles]="{width: 'clamp(280px ,50vw, 405px)'}"
+                        [styles]="{width: 'clamp(280px ,50vw, 405px)'}" [DataType]="{display: 'none'}"
                         [mainBlock]=" {flexDirection: 'column', width: 'clamp(280px ,50vw, 405px)', margin: '0 10px'}"
-                        [data]="item">
+                        [data]="item"
+                        [DataStyles]="{display: 'block', fontFamily: 'Inter', fontSize: '14px', fontWeight: '500', lineHeight: '20px', letterSpacing: '0px', marginBottom: '16px'}">
                     </app-blog-all-posts>
                     }
                 </div>
