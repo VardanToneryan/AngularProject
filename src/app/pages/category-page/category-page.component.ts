@@ -21,15 +21,15 @@ export class CategoryPageComponent implements OnInit {
   constructor(public request: RequestService) { }
 
   ngOnInit(): void {
-    this.request.getData<BlogAllPosts[]>(environments.BlogAllPosts.get).subscribe((data) => {
-      this.blogPosts = data.filter(blogPosts => blogPosts.id === 1 || blogPosts.id === 2 || blogPosts.id === 3 || blogPosts.id === 4)
+    this.request.getData<BlogAllPosts[]>(`${environments.BlogAllPosts.get}?_start=0&_limit=4`).subscribe((data) => {
+      this.blogPosts = data;
     }, (e) => {
       console.log(e);
-    })
+    });
+    
 
     this.request.getData<Category[]>(environments.Category.get).subscribe((data) => {
       this.category = data
     })
-
   }
 }

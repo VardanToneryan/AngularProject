@@ -4,7 +4,10 @@ export const environments = {
         get: host + 'AllPosts'
     },
     Category: {
-        get: host + 'Category'
+        get: host + 'Category',
+        put: host + 'Category',
+        delete: host + 'Category',
+        post: host + 'Category'
     },
     Authors: {
         get: host + 'Authors'

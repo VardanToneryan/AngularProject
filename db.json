@@ -51,10 +51,10 @@
   ],
   "Category": [
     {
-      "id": "1",
       "image": "assets/img/icon1.png",
       "title": "Business",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+      "id": "1"
     },
     {
       "id": "2",
@@ -77,7 +77,7 @@
   ],
   "Authors": [
     {
-      "id": 1,
+      "id": "1",
       "image": "assets/img/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.png",
       "name": "Floyd Miles",
       "text": "Content Writer @Company",
@@ -106,7 +106,7 @@
       "about_Author_description_5": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non."
     },
     {
-      "id": 2,
+      "id": "2",
       "image": "assets/img/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.png",
       "name": "Dianne Russell",
       "text": "Content Writer @Company",
@@ -135,7 +135,7 @@
       "about_Author_description_5": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non."
     },
     {
-      "id": 3,
+      "id": "3",
       "image": "assets/img/fashion-woman-cute-shoes-5704849.png",
       "name": "Jenny Wilson",
       "text": "Content Writer @Company",
@@ -164,7 +164,7 @@
       "about_Author_description_5": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non."
     },
     {
-      "id": 4,
+      "id": "4",
       "image": "assets/img/content-baker-with-delicious-puff-in-cafeteria-6205509.png",
       "name": "Leslie Alexander",
       "text": "Content Writer @Company",
@@ -193,7 +193,7 @@
       "about_Author_description_5": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non."
     },
     {
-      "id": 5,
+      "id": "5",
       "image": "assets/img/man-in-whitebutton-up-shirt-wearing-black-framed-eyeglasses-7562313.png",
       "name": "Guy Howkins",
       "text": "Content Writer @Company",
@@ -222,7 +222,7 @@
       "about_Author_description_5": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non."
     },
     {
-      "id": 6,
+      "id": "6",
       "image": "assets/img/woman-in-blackand-black-striped-shirt-wearing-black-sunglasses-3671083.png",
       "name": "Eleanor Pena",
       "text": "Content Writer @Company",
@@ -251,7 +251,7 @@
       "about_Author_description_5": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non."
     },
     {
-      "id": 7,
+      "id": "7",
       "image": "assets/img/content-unshaven-man-covering-eye-with-yellow-flower-5262459.png",
       "name": "Robert Fox",
       "text": "Content Writer @Company",
@@ -280,7 +280,7 @@
       "about_Author_description_5": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non."
     },
     {
-      "id": 8,
+      "id": "8",
       "image": "assets/img/cheerful-young-ethnic-male-millennial-standing-near-stone-wall-and-smiling-6147118.png",
       "name": "Jacob Jones",
       "text": "Content Writer @Company",
@@ -309,7 +309,7 @@
       "about_Author_description_5": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non."
     },
     {
-      "id": 9,
+      "id": "9",
       "image": "assets/img/man-in-white-dress-shirt-sitting-on-black-rolling-chair-while-facing-black-computer-set-and-smiling-840996.png",
       "name": "John Deo",
       "icone_1": "assets/img/fb.png",
@@ -339,7 +339,7 @@
   ],
   "BlogAllPosts": [
     {
-      "id": 1,
+      "id": "1",
       "image": "assets/img/two-women-in-front-of-dry-erase-board-1181533.png",
       "type": "STARTUP",
       "date": " l Aug 23, 2021",
@@ -347,7 +347,7 @@
       "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident."
     },
     {
-      "id": 2,
+      "id": "2",
       "image": "assets/img/photo-of-people-doing-handshakes-3183197.png",
       "type": "BUSINESS",
       "date": " l Aug 23, 2021",
@@ -355,7 +355,7 @@
       "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident."
     },
     {
-      "id": 3,
+      "id": "3",
       "image": "assets/img/photo-of-woman-looking-at-man-3183173.png",
       "type": "STARTUP",
       "date": " l Aug 23, 2021",
@@ -363,7 +363,7 @@
       "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident."
     },
     {
-      "id": 4,
+      "id": "4",
       "image": "assets/img/photo-of-people-walking-on-hallway-3182811.png",
       "type": "TECHNOLOGY",
       "date": " l Aug 23, 2021",
@@ -371,7 +371,7 @@
       "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident."
     },
     {
-      "id": 5,
+      "id": "5",
       "image": "assets/img/two-women-in-front-of-dry-erase-board-1181533.png",
       "type": "ECONOMY ",
       "date": " l Aug 23, 2021",
@@ -379,7 +379,7 @@
       "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident."
     },
     {
-      "id": 6,
+      "id": "6",
       "image": "assets/img/two-women-in-front-of-dry-erase-board-1181533.png",
       "type": "STARTUP",
       "date": " l Aug 23, 2021",
@@ -387,7 +387,7 @@
       "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident."
     },
     {
-      "id": 7,
+      "id": "7",
       "image": "assets/img/photo-of-people-walking-on-hallway-3182811.png",
       "type": "TECHNOLOGY",
       "date": " l Aug 23, 2021",
@@ -395,7 +395,7 @@
       "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident."
     },
     {
-      "id": 8,
+      "id": "8",
       "image": "assets/img/two-women-in-front-of-dry-erase-board-1181533.png",
       "type": "ECONOMY ",
       "date": " l Aug 23, 2021",
@@ -403,7 +403,7 @@
       "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident."
     },
     {
-      "id": 9,
+      "id": "9",
       "image": "assets/img/photo-of-people-doing-handshakes-3183197.png",
       "type": "BUSINESS",
       "date": " l Aug 23, 2021",
@@ -411,7 +411,7 @@
       "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident."
     },
     {
-      "id": 10,
+      "id": "10",
       "image": "assets/img/photo-of-woman-looking-at-man-3183173.png",
       "type": "STARTUP",
       "date": " l Aug 23, 2021",
@@ -421,7 +421,7 @@
   ],
   "JoinOurTeam": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Join our team to be a part of our story",
       "description": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
     }
