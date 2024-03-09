@@ -1,4 +1,3 @@
-
 .blog-header {
     background: #F4F0F8;
     padding: 94px 0;
@@ -19,7 +18,7 @@
 }
 
 .header-display>div>h2 {
-    width: clamp(280px,50vw,624px);
+    width: clamp(280px, 50vw, 624px);
     color: #232536;
     font-family: Sen;
     font-weight: 700;
@@ -44,7 +43,7 @@
 }
 
 .header-display>div>span {
-    width: clamp(280px,50vw,624px);
+    width: clamp(280px, 50vw, 624px);
     color: #6D6E76;
     font-family: Inter;
     font-size: 16px;
@@ -57,23 +56,80 @@
     margin-bottom: 64px;
 }
 
+.BlogAllPostsDiv {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 64px;
+}
+
+.BlogAllPostsDiv>div {
+    padding: 55px 0;
+}
+
+.BlogAllPostsDiv>div>h5 {
+    color: #592EA9;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.BlogAllPostsDiv>div>h2 {
+    color: #232536;
+    font-family: Sen;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -2px;
+    font-size: clamp(24px,31px,36px);
+    letter-spacing: -2px;
+    margin: 20px 0 16px;
+    width: clamp(280px, 50vw, 580px);
+    cursor: pointer;
+}
+
+.BlogAllPostsDiv>div>p {
+    color: #6D6E76;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    width: clamp(280px, 50vw, 580px);
+}
+
+.BlogAllPostsDiv>img {
+    margin-right: 32px;
+    width: clamp(280px, 50vw, 490px);
+}
+
 .section-1>div>h2 {
     color: #232536;
     font-family: Sen;
     font-weight: 700;
-    font-size: clamp(36px,50vw,48px);
+    font-size: clamp(36px, 50vw, 48px);
     line-height: 64px;
     letter-spacing: -2px;
     margin: 64px 0 32px;
     border-bottom: 1px solid rgb(109 110 118 / 32%);
     padding-bottom: 64px;
 }
+
 .section-1_prevbAndNextb {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 69px 0 0 0;
 }
+.section-1_prevbAndNextb > pagination-controls{
+    font-family: Sen;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1px;
+}
+
 .section-1>div>h4 {
     color: #6D6E76;
     text-align: center;
@@ -94,6 +150,7 @@
     margin: 0 10px;
     cursor: pointer;
 }
+
 .section-2>h2 {
     text-align: center;
     color: #232536;
@@ -108,6 +165,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
 @media screen and (max-width:1230px) {
 
     .blog-header_image {
@@ -119,8 +177,16 @@
         justify-content: center;
         text-align: center;
     }
+
     .header-display {
         justify-content: center;
         text-align: center;
+    }
+    .BlogAllPostsDiv{
+        justify-content: center;
+        text-align: center;
+    }
+    .BlogAllPostsDiv > img{
+        margin: 0;
     }
 }

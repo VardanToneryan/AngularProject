@@ -1,24 +1,21 @@
 <header class="author-header">
     <div class="container">
         <div class="author-header_block">
+            @if(author){
             <div>
-                <img src="assets/img/close-up-photography-of-man-wearing-sunglasses-22222.png" alt="This is a image">
+                <img class="main_img" src="{{author.image}}" alt="This is a image">
             </div>
-
             <div class="author-header_texts">
-                <h1>Hey there, I’m Andrew Jonhson and welcome to my Blog</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris
-                    in aliquam sem. At risus viverra adipiscing at in tellus.
-                </p>
+                <h2>Hey there, I’m {{author.name}} and welcome to my Blog</h2>
+                <p>{{author.about_Author_description_1}}</p>
                 <div class="author-header_icones">
-                    <a href=""><img src="assets/img/fb.png" alt="This is a icone"></a>
-                    <a href=""><img src="assets/img/tw.png" alt="This is a icone"></a>
-                    <a href=""><img src="assets/img/insta.png" alt="This is a icone"></a>
-                    <a href=""><img src="assets/img/LI.png" alt="This is a icone"></a>
+                    <a><img src="assets/img/fb.png" alt="This is a icone"></a>
+                    <a><img src="assets/img/tw.png" alt="This is a icone"></a>
+                    <a><img src="assets/img/insta.png" alt="This is a icone"></a>
+                    <a><img src="assets/img/LI.png" alt="This is a icone"></a>
                 </div>
             </div>
+            }
         </div>
         <div class="author-header_colors">
             <div class="author-header_yellow-block"></div>
@@ -31,11 +28,22 @@
 <main>
     <div class="container">
         <section class="author-section-1">
-            <h1>My Posts</h1>
+            <h2>My Posts</h2>
             <div>
                 <div>
-                    @for(item of data; track item){
-                    <app-blog-all-posts [data]="item"></app-blog-all-posts>
+                    @for(item of BlogAllPosts; track item){
+                    <!-- @if(item?.name === author?.name){ -->
+                    @if(item && author && item.name === author.name){
+                    <!-- <app-blog-all-posts [BlogAllPosts]="item"></app-blog-all-posts> -->
+                    <img src="{{item.image}}" alt="image">
+                    <div>
+                        <h3>{{item.type}}</h3>
+                        <h2 [routerLink]="['/layout/blog-post/', id]">{{item.title}}</h2>
+                        <p>{{item.description}}</p>
+                    </div>
+                    }
+                    }@empty {
+                    <h2>There is no items</h2>
                     }
                 </div>
             </div>

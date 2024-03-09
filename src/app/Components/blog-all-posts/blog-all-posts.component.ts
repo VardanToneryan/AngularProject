@@ -4,24 +4,27 @@ import { NgStyle } from '@angular/common';
 import { RequestService } from '../../services/request.service';
 import { environments } from '../../../environments/environments';
 import { Authors } from '../..//models/authors';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 @Component({
   selector: 'app-blog-all-posts',
   standalone: true,
-  imports: [NgStyle],
+  imports: [NgStyle, RouterModule],
   templateUrl: './blog-all-posts.component.html',
   styleUrl: './blog-all-posts.component.css'
 })
-export class BlogAllPostsComponent implements OnInit  {
-  featuredPost!: Authors[]
-  constructor(public request: RequestService){}
+export class BlogAllPostsComponent implements OnInit {
+  featuredPost!: Authors;
+  blogposts!: BlogAllPosts;
 
-  ngOnInit():void{
-    this.request.getData<Authors[]>(`${environments.Authors.get}?_start=8&_limit=9`).subscribe((data)=>{ //////////// ??????????????????????????/
+  constructor(public request: RequestService) { }
+
+  ngOnInit(): void {
+    this.request.getData<Authors>(`${environments.Authors.get}/5`).subscribe((data) => {
       this.featuredPost = data
     })
   }
 
-  @Input('data') data!: BlogAllPosts;
+  @Input('BlogAllPosts') BlogAllPosts!: BlogAllPosts;
   @Input('styles') styles!: {};
   @Input('titleStyle') titleStyle!: {};
   @Input('mainBlock') mainBlock!: {};

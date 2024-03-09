@@ -9,9 +9,8 @@ import { HomeComponent } from './pages/home/home.component';
   standalone: true,
   imports: [RouterOutlet, HomeComponent, CommonModule, FooterComponent,NavComponent,RouterLink],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css', './Components/all-posts/all-posts.component.css']
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'Angular';
-
 }

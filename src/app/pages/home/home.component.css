@@ -107,6 +107,7 @@ header>div>div>h3>span {
     color: #232536;
     font-family: Sen;
     font-size: 28px;
+    line-height: 40px;
 }
 
 .section-1_firstDiv_border>div {
@@ -115,10 +116,49 @@ header>div>div>h3>span {
 
 /* section-1_secondDiv */
 
-.section-1_secondDiv_blocks{
-    overflow-x: auto;
+.section-1_secondDiv_blocks {
+    overflow-x: hidden;
     max-height: 622px;
 }
+
+.section-1_secondDiv_blocks>div {
+    padding: 22px 32px;
+    width: clamp(280px , 50vw, 567px);
+    transition: 0.5s;
+}
+.section-1_secondDiv_blocks>div:hover{
+    background-color: rgb(251, 246, 234);
+    
+}
+
+.section-1_secondDiv_blocks>div>p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.section-1_secondDiv_blocks>div>p>span {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: rgb(89, 46, 169);
+}
+
+.section-1_secondDiv_blocks>div>h2 {
+    color: rgb(35, 37, 54);
+    font-family: Sen;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    width: clamp(280px , 50vw, 369px);
+    cursor: pointer;
+}
+
 .section-1_secondDiv>div>h2 {
     color: #232536;
     font-family: Sen;
@@ -131,7 +171,7 @@ header>div>div>h3>span {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 32px;
-    
+
 }
 
 .section-1_secondDiv>div>a {
@@ -264,6 +304,7 @@ header>div>div>h3>span {
     letter-spacing: -2px;
     width: clamp(280px, 60vw, 546px);
     margin-bottom: 16px;
+    line-height: 64px;
 }
 
 .section-4_displayFlex>div>p {
@@ -332,6 +373,7 @@ header>div>div>h3>span {
 .section-5_secondDiv>div>a {
     margin: 0 10px;
 }
+
 /* 
 
 .section-6 {
@@ -492,6 +534,7 @@ header>div>div>h3>span {
     width: 48px;
     height: 48px;
     margin-right: 16px;
+    border-radius: 50%;
 }
 
 .section-6_secondDiv>div>div>h4 {
@@ -499,6 +542,7 @@ header>div>div>h3>span {
     font-family: Sen;
     font-size: 24px;
     line-height: 32px;
+    margin: 0;
 }
 
 .section-6_secondDiv>div>div>h3 {
@@ -511,7 +555,7 @@ header>div>div>h3>span {
 }
 
 
-.swiper-container{
+.swiper-container {
     overflow: hidden;
 }
 
@@ -543,7 +587,7 @@ header>div>div>h3>span {
     left: auto;
     right: 20%;
     top: auto;
-    bottom: 9%; 
+    bottom: 9%;
 }
 
 .swiper-button-next {
@@ -554,7 +598,7 @@ header>div>div>h3>span {
     background-size: cover;
 }
 
-.swiper{
+.swiper {
     position: relative;
 }
 
@@ -564,10 +608,12 @@ header>div>div>h3>span {
     header {
         padding: 110px 0;
     }
-    .swiper-button-next{
+
+    .swiper-button-next {
         right: 12%;
     }
-    .swiper-button-prev{
+
+    .swiper-button-prev {
         left: auto;
         right: 17%;
     }
@@ -581,6 +627,7 @@ header>div>div>h3>span {
     header>.container>div {
         padding: 0;
     }
+
     .section-1 {
         flex-wrap: wrap;
     }
@@ -642,6 +689,7 @@ header>div>div>h3>span {
     header {
         padding: 45px 0;
     }
+
     .section-1_firstDiv>h2 {
         margin-bottom: 50px;
     }
@@ -655,11 +703,13 @@ header>div>div>h3>span {
         margin: 20px 0;
         display: inline-block;
     }
+
     .swiper-button-prev {
         bottom: 0;
         left: 40%;
         right: auto;
     }
+
     .swiper-button-next {
         bottom: 0;
         right: 40%;
@@ -676,6 +726,7 @@ header>div>div>h3>span {
         margin: 12px 0;
         line-height: normal;
     }
+
     .section-4 {
         background-image: none;
         padding: 20px;
@@ -703,6 +754,7 @@ header>div>div>h3>span {
     h1 {
         margin: 0;
     }
+
     /* .section-1_firstDiv_border>div>img {
         width: 400px;
     } */
@@ -727,7 +779,8 @@ header>div>div>h3>span {
     .section-6_secondDiv>div>button {
         margin: 5px 0;
     }
-    .section-6_secondDiv{
+
+    .section-6_secondDiv {
         text-align: center;
     }
 }
@@ -745,6 +798,7 @@ header>div>div>h3>span {
     header>div>div>span {
         display: none;
     }
+
     .section-2_grayBlock {
         padding: 20px 0;
     }
@@ -784,6 +838,7 @@ header>div>div>h3>span {
     header>div>div>p {
         display: none;
     }
+
     .section-1_firstDiv>h2 {
         margin-bottom: 0;
     }
@@ -805,26 +860,16 @@ header>div>div>h3>span {
     .section-6 {
         padding: 50px 5px;
     }
+
     .swiper-button-prev {
         bottom: -3%;
         left: 35%;
         right: auto;
     }
+
     .swiper-button-next {
         bottom: -3%;
         right: 35%;
         left: auto;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-

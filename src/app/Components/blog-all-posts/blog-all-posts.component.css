@@ -1,6 +1,3 @@
-/* @import url(blog-all-posts.component.css); */
-
-
 .section-1_images {
     width: clamp(280px, 50vw, 490px);
     height: 312px;
@@ -47,7 +44,7 @@
     letter-spacing: -2px;
     margin: 20px 0 16px;
     width: clamp(280px, 50vw, 602px);
-
+    cursor: pointer;
 }
 
 .section-1_block>div>p {

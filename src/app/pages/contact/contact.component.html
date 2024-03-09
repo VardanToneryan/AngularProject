@@ -26,15 +26,14 @@
                 <p>hello&#64;finsweet.com</p>
             </div>
         </div>
-
-        <form method="post">
-            <input placeholder="Full Name" type="text">
-            <input placeholder="Your Email" type="email">
-            <select>
-                <option value="" disabled selected>Query Related  </option>
+        <form method="post" [formGroup]="form" (submit)="submitForm()">
+            <input placeholder="Full Name" type="text" formControlName="name">
+            <input placeholder="Your Email" type="email" formControlName="email">
+            <select formControlName="QueryRelated">
+                <option value="" disabled selected>Query Related</option>
             </select>
-            <input class="message-input" placeholder="Message" type="text">
-            <button class="form-button">Send Message</button>
+            <input class="message-input" placeholder="Message" type="text" formControlName="message">
+            <button class="form-button" type="submit">Send Message</button>
         </form>
     </div>
 </header>

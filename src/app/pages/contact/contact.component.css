@@ -1,14 +1,16 @@
-header{
+header {
     padding: 50px 0;
 }
-header > div{
+
+header>div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .header-div1 {
     text-align: center;
-    width: clamp(280px,50vw,100%);
+    width: clamp(280px, 50vw, 100%);
 }
 
 .header-div1>h3 {
@@ -41,7 +43,7 @@ header > div{
     background: #592EA9;
     display: flex;
     justify-content: space-evenly;
-    width: clamp(280px,50vw,768px);
+    width: clamp(280px, 50vw, 768px);
     flex-wrap: wrap;
     margin-top: 64px;
     margin-bottom: 32px;
@@ -53,10 +55,12 @@ header > div{
     margin: 16px 0;
 
 }
+
 .header-purple-block>div {
     margin: 0 10px;
 
 }
+
 .header-purple-block>div>div>h3 {
     color: rgb(255 255 255 / 60%);
     font-family: Inter;
@@ -85,13 +89,13 @@ header > div{
 }
 
 form {
-    width: clamp(280px,50vw,100%);
+    width: clamp(280px, 50vw, 100%);
 
 }
 
 form>input {
     display: block;
-    width: clamp(280px,50vw,100%);
+    width: clamp(280px, 50vw, 100%);
     padding: 24px;
     align-items: center;
     border-radius: 2px;
@@ -100,7 +104,7 @@ form>input {
 }
 
 form>select {
-    width: clamp(280px,50vw,100%);
+    width: clamp(280px, 50vw, 100%);
 
     padding: 24px;
     align-items: center;
@@ -110,7 +114,7 @@ form>select {
 }
 
 .message-input {
-    width: clamp(280px,50vw,100%);
+    width: clamp(280px, 50vw, 100%);
     height: 144px;
     padding: 0px 24px 24px;
 }
@@ -124,14 +128,24 @@ form>select {
     line-height: 32px;
     border: none;
     padding: 16px 0;
-    width: clamp(280px,50vw,100%);
+    width: clamp(280px, 50vw, 100%);
 }
 
+input.ng-dirty.ng-touched.ng-valid {
+    border: 2px solid green;
+}
+
+input.ng-invalid.ng-touched {
+    border: 2px solid red;
+}
+
+
 @media screen and (max-width:1070px) {
-    .header-purple-block{
+    .header-purple-block {
         text-align: center;
         flex-direction: column;
     }
+
     .contact_header {
         margin: 70px 0;
     }

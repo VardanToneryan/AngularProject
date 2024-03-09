@@ -1,4 +1,5 @@
 @import url('../../../../node_modules/@angular/material/prebuilt-themes/indigo-pink.css');
+
 .BlogPost_header {
     padding: 128px 0 64px;
 }
@@ -119,7 +120,7 @@
     margin: 24px 0;
 }
 
-.mat-typography h2{
+.mat-typography h2 {
     font-size: 72px !important;
 }
 
@@ -137,10 +138,44 @@
 }
 
 
-.blogPost-section-3_display > div{
+.blogPost-section-3_display>div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.blogPost-section-3_display>div>div>img {
+    width: clamp(280px, 50vw, 405px)
+}
+
+.blogPost-section-3_display>div>div>div>h2 {
+    font-family: Sen;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1px;
+    width: clamp(280px, 50vw, 405px);
+    color: rgb(35, 37, 54);
+}
+
+.blogPost-section-3_display>div>div>div>p {
+    color: rgb(35, 37, 54);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    width: clamp(280px, 50vw, 405px);
+}
+
+.blogPost-section-3_display>div>div>div>p>span {
+    color: rgb(89, 46, 169);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    width: clamp(280px, 50vw, 405px);
 }
 
 .blogPost_section-3 {
@@ -220,12 +255,14 @@
     .blogPost-section-3_display>div {
         text-align: center;
     }
-    .blog-header_display{
+
+    .blog-header_display {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .BlogPost_header  h2{
+
+    .BlogPost_header h2 {
         margin: 10px 0;
         line-height: 40px;
     }

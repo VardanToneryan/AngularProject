@@ -17,7 +17,7 @@
                 <div>
                     @for(item of blogPosts; track item){
                     <app-blog-all-posts [styles]="{width: '294px', height: '312px'}"
-                        [titleStyle]="{width: 'clamp(280px,50vw,510px)'}" [data]="item"></app-blog-all-posts>
+                        [titleStyle]="{width: 'clamp(280px,50vw,510px)'}" [BlogAllPosts]="item"></app-blog-all-posts>
                     }
                 </div>
             </div>

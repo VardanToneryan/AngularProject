@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { BlogAllPostsComponent } from '../../Components/blog-all-posts/blog-all-posts.component';
 import { BlogAllPosts } from "../../models/blogAllPosts";
@@ -8,37 +8,48 @@ import { CategoryComponent } from '../../Components/category/category.component'
 import { JoinOurTeamComponent } from '../../Components/join-our-team/join-our-team.component';
 import { RequestService } from '../../services/request.service';
 import { environments } from '../../../environments/environments';
-import { Authors } from '../../models/authors';
 import { MatPaginatorModule } from '@angular/material/paginator';
-
-
+import { NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @Component({
   selector: 'app-blog',
   standalone: true,
-  imports: [RouterModule, BlogAllPostsComponent, CommonModule, CategoryComponent, JoinOurTeamComponent, MatPaginatorModule],
+  imports: [
+    NgbPaginationModule,
+    RouterModule,
+    BlogAllPostsComponent,
+    CommonModule,
+    CategoryComponent,
+    JoinOurTeamComponent,
+    MatPaginatorModule,
+    NgxPaginationModule],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css'
 })
 export class BlogComponent implements OnInit {
   BlogAllPosts: BlogAllPosts[] = []
   Category: Category[] = []
-  featuredPost!: Authors[];
-  currentPage = 0;
-  limitIndex = 5;
-  totalItems!: number;
+  featuredPost!: BlogAllPosts;
+  p: number = 1;
+  itemsPerPage: number = 5
 
   constructor(public request: RequestService) { }
 
   ngOnInit(): void {
-    this.LoadBlogAllPosts()
-    this.LoadCategory()
-    this.LoadFeaturedPost()
+    this.LoadBlogAllPosts();
+    this.LoadCategory();
+    this.checkScreenWidth()
   }
 
   LoadBlogAllPosts() {
-    this.request.getData<BlogAllPosts[]>(`${environments.BlogAllPosts.get}?_start=0&_limit=5`).subscribe((data) => {
-      this.BlogAllPosts = data
+    this.request.getData<BlogAllPosts[]>(`${environments.BlogAllPosts.get}`).subscribe((data) => {
+      this.BlogAllPosts = data;
+    }, (e) => {
+      console.log(e);
+    })
+    this.request.getData<BlogAllPosts>(`${environments.BlogAllPosts.get}/9`).subscribe((featuredPost) => {
+      this.featuredPost = featuredPost;
     }, (e) => {
       console.log(e);
     })
@@ -50,9 +61,12 @@ export class BlogComponent implements OnInit {
       console.log(e);
     })
   }
-  LoadFeaturedPost() {
-    this.request.getData<Authors[]>(`${environments.Authors.get}?_start=8&_end=9`).subscribe((data) => {
-      this.featuredPost = data
-    })
+  checkScreenWidth() {
+    if (window.innerWidth <= 800) {
+      this.itemsPerPage = 1;
+      console.log('hello');
+    }else{
+      this.itemsPerPage = 5
+    }
   }
 }

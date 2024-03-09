@@ -1,13 +1,13 @@
 <div class="section-1_block" [ngStyle]="mainBlock">
-    <img [ngStyle]="styles" class="section-1_images" src="{{data.image}}" alt="This is a image">
+    <img [ngStyle]="styles" class="section-1_images" src="{{BlogAllPosts.image}}" alt="This is a image">
     <div>
-        @for(item of featuredPost; track item){
+        @if(featuredPost){
         <span [ngStyle]="DataStyles">
-            <span>By <a>{{item.name}}</a></span> {{data.date}}
+            <span>By <a>{{featuredPost.name}}</a></span> {{BlogAllPosts.date}}
         </span>
         }
-        <h5 [ngStyle]="DataType">{{data.type}}</h5>
-        <h2 [ngStyle]="titleStyle">{{data.title}}</h2>
-        <p [ngStyle]="titleStyle">{{data.description}}</p>
+        <h5 [ngStyle]="DataType">{{BlogAllPosts.type}}</h5>
+        <h2 [ngStyle]="titleStyle">{{BlogAllPosts.title}}</h2>
+        <p [ngStyle]="titleStyle">{{BlogAllPosts.description}}</p>
     </div>
 </div>

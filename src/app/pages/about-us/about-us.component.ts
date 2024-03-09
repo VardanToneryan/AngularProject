@@ -13,14 +13,14 @@ import { Authors } from '../../models/authors';
 })
 export class AboutUsComponent  implements OnInit {
 
-  data: Authors[] = [];
+  Authors: Authors[] = [];
 
 
   constructor(public request: RequestService){}
 
   ngOnInit(): void{
-    this.request.getData<Authors[]>(`${environments.Authors.get}?_start=0&_limit=8`).subscribe((data)=>{
-      this.data = data;
+    this.request.getData<Authors[]>(`${environments.Authors.get}`).subscribe((data)=>{ // ?_start=0&_limit=8
+      this.Authors = data;
     },(e)=>{
       console.log(e);
     })

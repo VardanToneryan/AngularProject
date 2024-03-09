@@ -38,8 +38,13 @@
 
 .section-5_icones>a>img {
     margin: 0 10px;
+    cursor: pointer;
 }
-
+.img{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
 
 
 

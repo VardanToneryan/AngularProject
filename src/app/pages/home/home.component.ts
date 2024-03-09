@@ -2,8 +2,6 @@ import { Component, OnInit, Output } from '@angular/core';
 import { ActivatedRoute, RouterModule, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { NavComponent } from '../../Components/nav/nav.component';
-import { AllPostsComponent } from '../../Components/all-posts/all-posts.component';
-import { AllPosts } from '../../models/allPosts';
 import { CategoryComponent } from '../../Components/category/category.component';
 import { Category } from "../../models/category";
 import { AuthorsComponent } from '../../Components/authors/authors.component';
@@ -16,6 +14,7 @@ import { NgModel } from '@angular/forms';
 import { environments } from '../../../environments/environments';
 import { Swiper } from 'swiper';
 import 'swiper/swiper-bundle.css';
+import { BlogAllPostsComponent } from '../../Components/blog-all-posts/blog-all-posts.component';
 
 
 @Component({
@@ -26,11 +25,11 @@ import 'swiper/swiper-bundle.css';
     RouterModule,
     NavComponent,
     CommonModule,
-    AllPostsComponent,
     CategoryComponent,
     AuthorsComponent,
     JoinOurTeamComponent,
-    FooterComponent
+    FooterComponent,
+    BlogAllPostsComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
@@ -41,38 +40,51 @@ export class HomeComponent implements OnInit {
   swiper!: Swiper | undefined;
   currentIndex: number = 0;
   prevButtonWidth: string = '42px';
-  posts: AllPosts[] = [];
+  BlogAllPosts: BlogAllPosts[] = [];
   categories: Category[] = [];
   authors: Authors[] = [];
-  featuredPost: Authors[] = [];
+  author10!: Authors;
+  featuredPost!: Authors;
+  allAuthors: Authors[] = [];;
 
-  constructor(public request: RequestService){}
+  constructor(public request: RequestService) { }
 
   ngOnInit(): void {
-    this.swiper = new Swiper('.swiper-container', {
-    });
+    this.swiper = new Swiper('.swiper-container', {});
+    this.loadCategory()
+    this.loadAllPosts();
+    this.loadAuthors();
+  }
 
-    this.request.getData<AllPosts[]>(environments.AllPosts.get).subscribe((data) => {
-      this.posts = data;
-    }, (e) => {
-      console.log(e);
-    })
-
+  loadCategory() {
     this.request.getData<Category[]>(environments.Category.get).subscribe((data) => {
       this.categories = data;
     }, (e) => {
       console.log(e);
     })
+  }
 
+  loadAllPosts() {
+    this.request.getData<BlogAllPosts[]>(environments.BlogAllPosts.get).subscribe((BlogAllPosts) => {
+      this.BlogAllPosts = BlogAllPosts;
+    }, (e) => {
+      console.log(e);
+    })
+  }
+
+  loadAuthors() {
     this.request.getData<Authors[]>(`${environments.Authors.get}?_start=0&_limit=4`).subscribe((data) => {
       this.authors = data;
-      // this.featuredAuthor = this.authors[3];
+      this.request.getData<Authors>(`${environments.Authors.get}/10`).subscribe((data) => {
+        this.author10 = data;
+      });
+      this.request.getData<Authors>(`${environments.Authors.get}/9`).subscribe((featuredPost) => {
+        this.featuredPost = featuredPost;
+      })
+      this.request.getData<Authors[]>(environments.Authors.get).subscribe((allAuthors) => {
+        this.allAuthors = allAuthors;
+      })
     });
-
-    this.request.getData<Authors[]>(`${environments.Authors.get}?_start=8&_limit=9`).subscribe((data)=>{ //////////// ??????????????????????????/
-      this.featuredPost = data
-    })
-
   }
 
   nextSlide(): void {

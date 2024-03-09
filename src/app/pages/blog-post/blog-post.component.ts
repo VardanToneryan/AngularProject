@@ -18,7 +18,7 @@ import { Authors } from '../../models/authors';
 })
 export class BlogPostComponent implements OnInit {
   blogPosts: BlogAllPosts[] = [];
-  id!: string;
+  id!: string | number;
   authors!: Authors;
   arrayAuthors: Authors[] = [];
 
@@ -41,12 +41,12 @@ export class BlogPostComponent implements OnInit {
     this.request.getData<Authors>(`${environments.Authors.get}/${this.id}`).subscribe((data) => {
       this.authors = data;
       this.arrayAuthors.push(this.authors);
-      
+
     }, (e) => {
       console.error(e);
     }
     );
   }
-  
+
 
 }

@@ -51,7 +51,7 @@ export const routes: Routes = [
                 title: 'Category'
             },
             {
-                path: 'authors',
+                path: 'authors/:id',
                 component: AuthorPageComponent,
                 title: 'Authors'
             },

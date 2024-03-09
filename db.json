@@ -1,54 +1,4 @@
 {
-  "AllPosts": [
-    {
-      "id": "1",
-      "text_1": "l Aug 23, 2021",
-      "text_2": "8 Figma design systems that you can download for free today.",
-      "text_3": "John Deo"
-    },
-    {
-      "id": "2",
-      "text_1": "l Aug 23, 2021",
-      "text_2": "8 Figma design systems that you can download for free today.",
-      "text_3": "John Deo"
-    },
-    {
-      "id": "3",
-      "text_1": "l Aug 23, 2021",
-      "text_2": "8 Figma design systems that you can download for free today.",
-      "text_3": "John Deo"
-    },
-    {
-      "id": "4",
-      "text_1": "l Aug 23, 2021",
-      "text_2": "8 Figma design systems that you can download for free today.",
-      "text_3": "John Deo"
-    },
-    {
-      "id": "5",
-      "text_1": "l Aug 23, 2021",
-      "text_2": "8 Figma design systems that you can download for free today.",
-      "text_3": "John Deo"
-    },
-    {
-      "id": "6",
-      "text_1": "l Aug 23, 2021",
-      "text_2": "8 Figma design systems that you can download for free today.",
-      "text_3": "John Deo"
-    },
-    {
-      "id": "7",
-      "text_1": "l Aug 23, 2021",
-      "text_2": "8 Figma design systems that you can download for free today.",
-      "text_3": "John Deo"
-    },
-    {
-      "id": "8",
-      "text_1": "l Aug 23, 2021",
-      "text_2": "8 Figma design systems that you can download for free today.",
-      "text_3": "John Deo"
-    }
-  ],
   "Category": [
     {
       "image": "assets/img/icon1.png",
@@ -81,10 +31,6 @@
       "image": "assets/img/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.png",
       "name": "Floyd Miles",
       "text": "Content Writer @Company",
-      "icone_1": "assets/img/fb.png",
-      "icone_2": "assets/img/tw.png",
-      "icone_3": "assets/img/insta.png",
-      "icone_4": "assets/img/LI.png",
       "categoryeIcon": "assets/img/icon1.png",
       "category": "Business",
       "mainImage": "assets/img/photo-of-woman-wearing-eyeglasses-3184405.png",
@@ -110,10 +56,6 @@
       "image": "assets/img/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.png",
       "name": "Dianne Russell",
       "text": "Content Writer @Company",
-      "icone_1": "assets/img/fb.png",
-      "icone_2": "assets/img/tw.png",
-      "icone_3": "assets/img/insta.png",
-      "icone_4": "assets/img/LI.png",
       "categoryeIcon": "assets/img/icon2.png",
       "category": "Startup",
       "mainImage": "assets/img/photo-of-woman-wearing-eyeglasses-3184405.png",
@@ -139,10 +81,6 @@
       "image": "assets/img/fashion-woman-cute-shoes-5704849.png",
       "name": "Jenny Wilson",
       "text": "Content Writer @Company",
-      "icone_1": "assets/img/fb.png",
-      "icone_2": "assets/img/tw.png",
-      "icone_3": "assets/img/insta.png",
-      "icone_4": "assets/img/LI.png",
       "categoryeIcon": "assets/img/icon3.png",
       "category": "Economy",
       "mainImage": "assets/img/photo-of-woman-wearing-eyeglasses-3184405.png",
@@ -168,10 +106,6 @@
       "image": "assets/img/content-baker-with-delicious-puff-in-cafeteria-6205509.png",
       "name": "Leslie Alexander",
       "text": "Content Writer @Company",
-      "icone_1": "assets/img/fb.png",
-      "icone_2": "assets/img/tw.png",
-      "icone_3": "assets/img/insta.png",
-      "icone_4": "assets/img/LI.png",
       "categoryeIcon": "assets/img/icon4.png",
       "category": "Technology",
       "mainImage": "assets/img/photo-of-woman-wearing-eyeglasses-3184405.png",
@@ -197,10 +131,6 @@
       "image": "assets/img/man-in-whitebutton-up-shirt-wearing-black-framed-eyeglasses-7562313.png",
       "name": "Guy Howkins",
       "text": "Content Writer @Company",
-      "icone_1": "assets/img/fb.png",
-      "icone_2": "assets/img/tw.png",
-      "icone_3": "assets/img/insta.png",
-      "icone_4": "assets/img/LI.png",
       "categoryeIcon": "assets/img/icon2.png",
       "category": "Startup",
       "mainImage": "assets/img/photo-of-woman-wearing-eyeglasses-3184405.png",
@@ -226,10 +156,6 @@
       "image": "assets/img/woman-in-blackand-black-striped-shirt-wearing-black-sunglasses-3671083.png",
       "name": "Eleanor Pena",
       "text": "Content Writer @Company",
-      "icone_1": "assets/img/fb.png",
-      "icone_2": "assets/img/tw.png",
-      "icone_3": "assets/img/insta.png",
-      "icone_4": "assets/img/LI.png",
       "categoryeIcon": "assets/img/icon1.png",
       "category": "Business",
       "mainImage": "assets/img/photo-of-woman-wearing-eyeglasses-3184405.png",
@@ -255,10 +181,6 @@
       "image": "assets/img/content-unshaven-man-covering-eye-with-yellow-flower-5262459.png",
       "name": "Robert Fox",
       "text": "Content Writer @Company",
-      "icone_1": "assets/img/fb.png",
-      "icone_2": "assets/img/tw.png",
-      "icone_3": "assets/img/insta.png",
-      "icone_4": "assets/img/LI.png",
       "categoryeIcon": "assets/img/icon3.png",
       "category": "Economy",
       "mainImage": "assets/img/photo-of-woman-wearing-eyeglasses-3184405.png",
@@ -284,10 +206,6 @@
       "image": "assets/img/cheerful-young-ethnic-male-millennial-standing-near-stone-wall-and-smiling-6147118.png",
       "name": "Jacob Jones",
       "text": "Content Writer @Company",
-      "icone_1": "assets/img/fb.png",
-      "icone_2": "assets/img/tw.png",
-      "icone_3": "assets/img/insta.png",
-      "icone_4": "assets/img/LI.png",
       "categoryeIcon": "assets/img/icon4.png",
       "category": "Technology",
       "mainImage": "assets/img/photo-of-woman-wearing-eyeglasses-3184405.png",
@@ -312,14 +230,36 @@
       "id": "9",
       "image": "assets/img/man-in-white-dress-shirt-sitting-on-black-rolling-chair-while-facing-black-computer-set-and-smiling-840996.png",
       "name": "John Deo",
-      "icone_1": "assets/img/fb.png",
-      "icone_2": "assets/img/tw.png",
-      "icone_3": "assets/img/insta.png",
-      "icone_4": "assets/img/LI.png",
+      "text": "Content Writer @Company",
       "categoryeIcon": "assets/img/icon2.png",
       "category": "Startup",
       "mainImage": "assets/img/photo-of-woman-wearing-eyeglasses-3184405.png",
       "date": "Posted on 2th January 2022",
+      "slogan": "Step-by-step guide to choosing great font pairs",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "featuredPost": "assets/img/white-concrete-building.png",
+      "about_Author_Title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+      "about_Author_description_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
+      "about_Author_Title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
+      "about_Author_description_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
+      "about_Author_description_3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
+      "list_1": "Lorem ipsum dolor sit amet",
+      "list_2": "Non blandit massa enim nec scelerisque",
+      "list_3": "Neque egestas congue quisque egestas",
+      "about_Author_description_4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
+      "about_Author_Title3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
+      "about_Author_description_5": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non."
+    },
+    {
+      "id": "10",
+      "image": "assets/img/Authors-icon.png",
+      "name": "James West",
+      "text": "Content Writer @Company",
+      "categoryeIcon": "assets/img/icon2.png",
+      "category": "Startup",
+      "mainImage": "assets/img/photo-of-woman-wearing-eyeglasses-3184405.png",
+      "date": " May 23, 2022",
       "slogan": "Step-by-step guide to choosing great font pairs",
       "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
       "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
@@ -340,6 +280,7 @@
   "BlogAllPosts": [
     {
       "id": "1",
+      "name": "Floyd Miles",
       "image": "assets/img/two-women-in-front-of-dry-erase-board-1181533.png",
       "type": "STARTUP",
       "date": " l Aug 23, 2021",
@@ -348,6 +289,7 @@
     },
     {
       "id": "2",
+      "name": "Dianne Russell",
       "image": "assets/img/photo-of-people-doing-handshakes-3183197.png",
       "type": "BUSINESS",
       "date": " l Aug 23, 2021",
@@ -356,6 +298,7 @@
     },
     {
       "id": "3",
+      "name": "Jenny Wilson",
       "image": "assets/img/photo-of-woman-looking-at-man-3183173.png",
       "type": "STARTUP",
       "date": " l Aug 23, 2021",
@@ -364,6 +307,7 @@
     },
     {
       "id": "4",
+      "name": "Leslie Alexander",
       "image": "assets/img/photo-of-people-walking-on-hallway-3182811.png",
       "type": "TECHNOLOGY",
       "date": " l Aug 23, 2021",
@@ -372,6 +316,7 @@
     },
     {
       "id": "5",
+      "name": "Guy Howkins",
       "image": "assets/img/two-women-in-front-of-dry-erase-board-1181533.png",
       "type": "ECONOMY ",
       "date": " l Aug 23, 2021",
@@ -380,6 +325,7 @@
     },
     {
       "id": "6",
+      "name": "Eleanor Pena",
       "image": "assets/img/two-women-in-front-of-dry-erase-board-1181533.png",
       "type": "STARTUP",
       "date": " l Aug 23, 2021",
@@ -388,6 +334,7 @@
     },
     {
       "id": "7",
+      "name": "Robert Fox",
       "image": "assets/img/photo-of-people-walking-on-hallway-3182811.png",
       "type": "TECHNOLOGY",
       "date": " l Aug 23, 2021",
@@ -396,6 +343,7 @@
     },
     {
       "id": "8",
+      "name": "Jacob Jones",
       "image": "assets/img/two-women-in-front-of-dry-erase-board-1181533.png",
       "type": "ECONOMY ",
       "date": " l Aug 23, 2021",
@@ -404,6 +352,7 @@
     },
     {
       "id": "9",
+      "name": "John Deo",
       "image": "assets/img/photo-of-people-doing-handshakes-3183197.png",
       "type": "BUSINESS",
       "date": " l Aug 23, 2021",
@@ -412,6 +361,7 @@
     },
     {
       "id": "10",
+      "name": "James West",
       "image": "assets/img/photo-of-woman-looking-at-man-3183173.png",
       "type": "STARTUP",
       "date": " l Aug 23, 2021",

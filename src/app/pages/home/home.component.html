@@ -1,18 +1,15 @@
 <app-nav></app-nav>
 <header>
     <div class="container">
+        @if(author10){
         <div>
-            <h3>Posted on <span>startup</span></h3>
-            <h1>Step-by-step guide to choosing great font pairs</h1>
-            <p>By <span>James West</span> | May 23, 2022</p>
-            <span>
-                Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident.
-            </span>
+            <h3>Posted on <span>{{author10.category}}</span></h3>
+            <h1>{{author10.slogan}}</h1>
+            <p>By <span>{{author10.name}}</span> | {{author10.date}}</p>
+            <span>{{author10.description}}</span>
             <a class="yellow-button" routerLink="/layout/blog-post">Read More ></a>
         </div>
+        }
     </div>
 </header>
 <main>
@@ -21,18 +18,14 @@
             <div class="section-1_firstDiv">
                 <h2>Featured Post</h2>
                 <div class="section-1_firstDiv_border">
-                    @for(item of featuredPost; track item){
-                        <div>
-                            <img src="{{item.featuredPost}}" alt="This is a image">
-                            <p>By<span> {{item.name}}</span> l May 23, 2022</p>
-                            <h3>
-                               {{item.title}}
-                            </h3>
-                            <p>
-                                {{item.description}}
-                            </p>
-                            <a class="yellow-button" routerLink="/layout/blog">Read More ></a>
-                        </div>
+                    @if(featuredPost){
+                    <div>
+                        <img src="{{featuredPost.featuredPost}}" alt="This is a image">
+                        <p>By<span> {{featuredPost.name}}</span> {{featuredPost.date}}</p>
+                        <h3>{{featuredPost.title}} </h3>
+                        <p>{{featuredPost.description}} </p>
+                        <a class="yellow-button" routerLink="/layout/blog">Read More ></a>
+                    </div>
                     }
                 </div>
             </div>
@@ -42,8 +35,11 @@
                     <a routerLink="/layout/blog">View all</a>
                 </div>
                 <div class="section-1_secondDiv_blocks">
-                    @for(item of posts; track item){
-                    <app-all-posts [allPosts]="item"></app-all-posts>
+                    @for(item of BlogAllPosts; track item){
+                    <div>
+                        <p>by <span>{{item.name}}</span> | {{item.date}}</p>
+                        <h2 [routerLink]="['/layout/blog-post/', item.id]">{{item.title}}</h2>
+                    </div>
                     }@empty {
                     <h2>There are no items</h2>
                     }
@@ -133,21 +129,11 @@
                 <p>We are</p>
                 <div>
                     <h3>Featured in</h3>
-                    <a>
-                        <img src="assets/img/Logo1.png" alt="This is a logo">
-                    </a>
-                    <a>
-                        <img src="assets/img/Logo2.png" alt="This is a logo">
-                    </a>
-                    <a>
-                        <img src="assets/img/Logo3.png" alt="This is a logo">
-                    </a>
-                    <a>
-                        <img src="assets/img/Logo4.png" alt="This is a logo">
-                    </a>
-                    <a>
-                        <img src="assets/img/Logo5.png" alt="This is a logo">
-                    </a>
+                    <a><img src="assets/img/Logo1.png" alt="This is a logo"></a>
+                    <a><img src="assets/img/Logo2.png" alt="This is a logo"></a>
+                    <a><img src="assets/img/Logo3.png" alt="This is a logo"></a>
+                    <a><img src="assets/img/Logo4.png" alt="This is a logo"></a>
+                    <a><img src="assets/img/Logo5.png" alt="This is a logo"></a>
                 </div>
             </div>
         </section>
@@ -155,11 +141,10 @@
         <!-- section-5 -->
         <!-- section-6 -->
 
-
         <div class="swiper">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    @for(author of authors; track author){
+                    @for(item of allAuthors; track item){
                     <div class="swiper-slide">
                         <section class="section-6">
 
@@ -178,9 +163,9 @@
                                     magna aliqua.
                                 </h4>
                                 <div>
-                                    <img src={{author.image}} alt="This is a profile photo">
+                                    <img src={{item.image}} alt="This is a profile photo">
                                     <div>
-                                        <h4 routerLink="/layout/authors">{{author.name}}</h4>
+                                        <h4 routerLink="/layout/authors">{{item.name}}</h4>
                                         <h3>New york, USA</h3>
                                     </div>
                                 </div>
@@ -198,5 +183,3 @@
     </div>
 </main>
 <app-footer></app-footer>
-
-

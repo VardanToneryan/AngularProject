@@ -1,18 +1,16 @@
 <header class="blog-header">
     <div class="container">
         <div class="header-display">
-            @for(item of featuredPost; track item){
+            @if(featuredPost){
             <div>
                 <h3>Featured Post</h3>
                 <h2>Step-by-step guide to choosing great font pairs</h2>
-                <p>By <span>{{item.name}}</span> l May 23, 2022 </p>
-                <span>
-                    {{item.description}}
-                </span>
+                <p>By <span>{{featuredPost.name}}</span> {{featuredPost.date}} </p>
+                <span>{{featuredPost.description}}</span>
                 <a class="yellow-button" routerLink="/layout/blog-post">Read More ></a>
             </div>
             <div class="blog-header_image">
-                <img src="{{item.image}}" alt="This ia a image">
+                <img src="{{featuredPost.image}}" alt="This ia a image">
             </div>
             }
         </div>
@@ -24,12 +22,20 @@
             <div>
                 <h2>All posts</h2>
             </div>
-            @for(item of BlogAllPosts; track item){
-            <app-blog-all-posts [data]="item"></app-blog-all-posts>
+            @for(item of BlogAllPosts | paginate: {itemsPerPage, currentPage: p}; track item){
+            <div>
+                <div class="BlogAllPostsDiv">
+                    <img src="{{item.image}}" alt="image">
+                    <div>
+                        <h5>{{item.type}}</h5>
+                        <h2 [routerLink]="['/layout/blog-post/', item.id]">{{item.title}}</h2>
+                        <p>{{item.description}}</p>
+                    </div>
+                </div>
+            </div>
             }
-            <div class="section-1_prevbAndNextb">  
-                <h4>&lt; Prev</h4>
-                <h3>Next ></h3>
+            <div class="section-1_prevbAndNextb">
+                <pagination-controls (pageChange)="p = $event"></pagination-controls>
             </div>
         </section>
         <section class="section-2">
@@ -45,7 +51,3 @@
         <app-join-our-team></app-join-our-team>
     </div>
 </main>
-
-
-
-<router-outlet></router-outlet>

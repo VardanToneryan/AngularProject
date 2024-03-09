@@ -49,12 +49,20 @@
             <div class="blogPost-section-3_display">
                 <div>
                     @for(item of blogPosts; track item){
-                    <app-blog-all-posts [titleStyle]="{width: 'clamp(280px ,50vw, 405px)'}"
+                    <!-- <app-blog-all-posts [titleStyle]="{width: 'clamp(280px ,50vw, 405px)'}"
                         [styles]="{width: 'clamp(280px ,50vw, 405px)'}" [DataType]="{display: 'none'}"
                         [mainBlock]=" {flexDirection: 'column', width: 'clamp(280px ,50vw, 405px)', margin: '0 10px'}"
-                        [data]="item"
+                        [BlogAllPosts]="item"
                         [DataStyles]="{display: 'block', fontFamily: 'Inter', fontSize: '14px', fontWeight: '500', lineHeight: '20px', letterSpacing: '0px', marginBottom: '16px'}">
-                    </app-blog-all-posts>
+                    </app-blog-all-posts> -->
+                    <div>
+                        <img src="{{item.image}}" alt="">
+                        <div>
+                            <p>By <span>{{item.name}}</span> | {{item.date}}</p>
+                            <h2>{{item.title}}</h2>
+                            <p>{{item.description}}</p>
+                        </div>
+                    </div>
                     }
                 </div>
             </div>
