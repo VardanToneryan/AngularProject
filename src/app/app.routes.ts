@@ -46,7 +46,7 @@ export const routes: Routes = [
                 title: 'About Us'
             },
             {
-                path: 'category',
+                path: 'category/:id',
                 component: CategoryPageComponent,
                 title: 'Category'
             },
@@ -83,7 +83,7 @@ export const routes: Routes = [
                 title: 'Admin Categories'
             },
             {
-                path: 'Admin-Authors',
+                path: 'Admin-Authors/:id',
                 component: AdminAuthorsComponent,
                 title: 'Admin Authors'
             },

@@ -61,10 +61,10 @@ export class BlogComponent implements OnInit {
       console.log(e);
     })
   }
+
   checkScreenWidth() {
     if (window.innerWidth <= 800) {
       this.itemsPerPage = 1;
-      console.log('hello');
     }else{
       this.itemsPerPage = 5
     }

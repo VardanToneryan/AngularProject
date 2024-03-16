@@ -156,6 +156,7 @@
     letter-spacing: -1px;
     width: clamp(280px, 50vw, 405px);
     color: rgb(35, 37, 54);
+    cursor: pointer;
 }
 
 .blogPost-section-3_display>div>div>div>p {
@@ -166,6 +167,7 @@
     line-height: 28px;
     letter-spacing: 0px;
     width: clamp(280px, 50vw, 405px);
+    margin: 15px 0;
 }
 
 .blogPost-section-3_display>div>div>div>p>span {

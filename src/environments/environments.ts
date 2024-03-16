@@ -13,7 +13,10 @@ export const environments = {
         get: host + 'Authors'
     },
     BlogAllPosts: {
-        get: host + 'BlogAllPosts'
+        get: host + 'BlogAllPosts',
+        put: host + 'BlogAllPosts',
+        delete: host + 'BlogAllPosts',
+        post: host + 'BlogAllPosts'
     },
     JoinOurTeam: {
         get: host + 'JoinOurTeam'

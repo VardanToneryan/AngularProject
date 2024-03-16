@@ -21,6 +21,11 @@ import { AdminBlogAllPostsComponent } from '../pages/admin/admin-blog-all-posts/
   styleUrl: './admin-layout.component.css'
 })
 export class AdminLayoutComponent {
+  id!: number;
+
+  constructor(public activatedRoute: ActivatedRoute){
+    this.id = this.activatedRoute.snapshot.params['id']
+  }
 
   clickCategory: boolean = false;
   clickAuthor: boolean = false;

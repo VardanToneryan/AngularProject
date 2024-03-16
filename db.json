@@ -1,27 +1,27 @@
 {
   "Category": [
     {
+      "id": "1",
       "image": "assets/img/icon1.png",
-      "title": "Business",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-      "id": "1"
+      "title": "BUSINESS",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
     },
     {
       "id": "2",
       "image": "assets/img/icon2.png",
-      "title": "Startup",
+      "title": "STARTUP",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
     },
     {
       "id": "3",
       "image": "assets/img/icon3.png",
-      "title": "Economy",
+      "title": "ECONOMY",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
     },
     {
       "id": "4",
       "image": "assets/img/icon4.png",
-      "title": "Technology",
+      "title": "TECHNOLOGY",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
     }
   ],
@@ -279,15 +279,6 @@
   ],
   "BlogAllPosts": [
     {
-      "id": "1",
-      "name": "Floyd Miles",
-      "image": "assets/img/two-women-in-front-of-dry-erase-board-1181533.png",
-      "type": "STARTUP",
-      "date": " l Aug 23, 2021",
-      "title": "Design tips for designers that cover everything you need ",
-      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident."
-    },
-    {
       "id": "2",
       "name": "Dianne Russell",
       "image": "assets/img/photo-of-people-doing-handshakes-3183197.png",
@@ -300,7 +291,7 @@
       "id": "3",
       "name": "Jenny Wilson",
       "image": "assets/img/photo-of-woman-looking-at-man-3183173.png",
-      "type": "STARTUP",
+      "type": "ECONOMY",
       "date": " l Aug 23, 2021",
       "title": "Logo design trends to avoid in 2022 ",
       "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident."
@@ -318,7 +309,7 @@
       "id": "5",
       "name": "Guy Howkins",
       "image": "assets/img/two-women-in-front-of-dry-erase-board-1181533.png",
-      "type": "ECONOMY ",
+      "type": "STARTUP ",
       "date": " l Aug 23, 2021",
       "title": "Font sizes in UI design: The complete guide to follow",
       "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident."
@@ -327,7 +318,7 @@
       "id": "6",
       "name": "Eleanor Pena",
       "image": "assets/img/two-women-in-front-of-dry-erase-board-1181533.png",
-      "type": "STARTUP",
+      "type": "BUSINESS",
       "date": " l Aug 23, 2021",
       "title": "Design tips for designers that cover everything you need ",
       "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident."
@@ -336,7 +327,7 @@
       "id": "7",
       "name": "Robert Fox",
       "image": "assets/img/photo-of-people-walking-on-hallway-3182811.png",
-      "type": "TECHNOLOGY",
+      "type": "ECONOMY",
       "date": " l Aug 23, 2021",
       "title": "8 Figma design systems you can download for free today",
       "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident."
@@ -345,7 +336,7 @@
       "id": "8",
       "name": "Jacob Jones",
       "image": "assets/img/two-women-in-front-of-dry-erase-board-1181533.png",
-      "type": "ECONOMY ",
+      "type": "TECHNOLOGY",
       "date": " l Aug 23, 2021",
       "title": "Font sizes in UI design: The complete guide to follow",
       "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident."

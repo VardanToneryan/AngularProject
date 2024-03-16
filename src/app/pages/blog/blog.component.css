@@ -83,7 +83,7 @@
     font-weight: 700;
     line-height: 48px;
     letter-spacing: -2px;
-    font-size: clamp(24px,31px,36px);
+    font-size: clamp(24px, 31px, 36px);
     letter-spacing: -2px;
     margin: 20px 0 16px;
     width: clamp(280px, 50vw, 580px);
@@ -122,7 +122,8 @@
     align-items: center;
     margin: 69px 0 0 0;
 }
-.section-1_prevbAndNextb > pagination-controls{
+
+.section-1_prevbAndNextb>pagination-controls {
     font-family: Sen;
     font-size: 28px;
     font-weight: 700;
@@ -166,6 +167,47 @@
     justify-content: space-evenly;
 }
 
+.my-pagination ::ng-deep .ngx-pagination .current {
+    background-color: black;
+}
+
+/* .my-pagination ::ng-deep .ngx-pagination li>a>span {
+    display: none;
+} */
+
+.section-2_display-flex>div {
+    padding: 32px;
+    border: 1px solid rgb(109 110 118 / 30%);
+    transition: 1s;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.section-2_display-flex>div:hover {
+    background-color: #FFD050;
+}
+
+.section-2_display-flex>div>h3 {
+    color: #232536;
+    font-family: Sen;
+    font-size: 28px;
+    letter-spacing: -1px;
+    margin: 16px 0 4px;
+    width: auto;
+}
+
+.section-2_display-flex>div>p {
+    color: #6D6E76;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 28px;
+    width: 232px;
+}
+
+.section-2_display-flex img {
+    width: 48px;
+}
+
 @media screen and (max-width:1230px) {
 
     .blog-header_image {
@@ -182,11 +224,13 @@
         justify-content: center;
         text-align: center;
     }
-    .BlogAllPostsDiv{
+
+    .BlogAllPostsDiv {
         justify-content: center;
         text-align: center;
     }
-    .BlogAllPostsDiv > img{
+
+    .BlogAllPostsDiv>img {
         margin: 0;
     }
 }

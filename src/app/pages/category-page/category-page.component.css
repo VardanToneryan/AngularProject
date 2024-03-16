@@ -97,6 +97,7 @@
     padding: 24px;
     margin: 24px;
     margin-left: 0;
+    align-items: center;
 }
 
 .category_section-1_secondblock div>div>h3 {
@@ -196,6 +197,39 @@
     font-size: 14px;
     line-height: 32px;
     text-decoration: none;
+}
+
+
+.category_section-1_secondblock-b>div {
+    padding: 32px;
+    border: 1px solid rgb(109 110 118 / 30%);
+    transition: 1s; 
+    margin: 10px;
+    cursor: pointer;
+}
+.category_section-1_secondblock-b>div:hover {
+    background-color: #FFD050;
+}
+
+.category_section-1_secondblock-b>div>h3 {
+    color: #232536;
+    font-family: Sen;
+    font-size: 28px;
+    letter-spacing: -1px;
+    margin: 16px 0 4px;
+    width: auto;
+}
+
+.category_section-1_secondblock-b>div>p {
+    color: #6D6E76;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 28px;
+    width: 232px;
+}
+.category_section-1_secondblock-b img{
+    width: 48px;
+    height: 48px;
 }
 
 

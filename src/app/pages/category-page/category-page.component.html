@@ -1,11 +1,12 @@
 <header class="category_header">
     <div class="container">
+        @if(oneCategory){
         <div>
-            <h2>Busines</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-            <p>eiusmod tempor incididunt ut labore.</p>
-            <h4>Blog > Business</h4>
+            <h2>{{oneCategory.title}}</h2>
+            <p>{{oneCategory.description}}</p>
+            <h4>Blog > {{oneCategory.title}}</h4>
         </div>
+        }
     </div>
 </header>
 
@@ -16,17 +17,21 @@
             <div class="category_section-1_firstblock">
                 <div>
                     @for(item of blogPosts; track item){
-                    <app-blog-all-posts [styles]="{width: '294px', height: '312px'}"
-                        [titleStyle]="{width: 'clamp(280px,50vw,510px)'}" [BlogAllPosts]="item"></app-blog-all-posts>
-                    }
+                            @if(item && oneCategory && category && item.type === oneCategory.title ){
+                            <app-blog-all-posts [styles]="{width: '294px', height: '312px'}"
+                                [titleStyle]="{width: 'clamp(280px,50vw,510px)'}" [BlogAllPosts]="item"></app-blog-all-posts>
+                            }
+                        }
                 </div>
             </div>
             <div class="category_section-1_secondblock">
                 <h2>Categories</h2>
                 <div class="category_section-1_secondblock-b">
                     @for(item of category; track item){
-                    <app-category [styles]="{display: 'none'}" [flex]="{display: 'flex', alignItems: 'center'}"
-                        [margin]="{margin: '0 5px'}" [data]="item"></app-category>
+                        <div [routerLink]="['/layout/category/' , item.id]">     
+                            <img src="{{item.image}}" alt="This is a image">
+                            <h3>{{item.title}}</h3>
+                        </div>
                     }
                 </div>
 

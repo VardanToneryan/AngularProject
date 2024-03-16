@@ -5,14 +5,15 @@ import { JoinOurTeamComponent } from '../../Components/join-our-team/join-our-te
 import { RequestService } from '../../services/request.service';
 import { environments } from '../../../environments/environments';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink, RouterModule } from '@angular/router';
 import { Authors } from '../../models/authors';
+import { routes } from '../../app.routes';
 
 
 @Component({
   selector: 'app-blog-post',
   standalone: true,
-  imports: [BlogAllPostsComponent, JoinOurTeamComponent, CommonModule],
+  imports: [BlogAllPostsComponent, JoinOurTeamComponent, CommonModule, RouterLink],
   templateUrl: './blog-post.component.html',
   styleUrl: './blog-post.component.css'
 })

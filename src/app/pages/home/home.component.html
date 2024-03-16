@@ -7,7 +7,7 @@
             <h1>{{author10.slogan}}</h1>
             <p>By <span>{{author10.name}}</span> | {{author10.date}}</p>
             <span>{{author10.description}}</span>
-            <a class="yellow-button" routerLink="/layout/blog-post">Read More ></a>
+            <a class="yellow-button" [routerLink]="['/layout/blog-post/', author10.id]">Read More ></a>
         </div>
         }
     </div>
@@ -87,7 +87,11 @@
             <h2>Choose A Category</h2>
             <div class="section-3_display-flex">
                 @for(item of categories; track item){
-                <app-category [data]="item"></app-category>
+                <div [routerLink]="['/layout/category/', item.id]">
+                    <img src="{{item.image}}" alt="This is a image">
+                    <h3>{{item.title}}</h3>
+                    <p>{{item.description}}</p>
+                </div>
                 }@empty {
                 <h2>There are no items</h2>
                 }
@@ -165,7 +169,7 @@
                                 <div>
                                     <img src={{item.image}} alt="This is a profile photo">
                                     <div>
-                                        <h4 routerLink="/layout/authors">{{item.name}}</h4>
+                                        <h4 [routerLink]="['/layout/authors', item.id]">{{item.name}}</h4>
                                         <h3>New york, USA</h3>
                                     </div>
                                 </div>

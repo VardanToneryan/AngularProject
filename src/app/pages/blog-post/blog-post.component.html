@@ -59,7 +59,7 @@
                         <img src="{{item.image}}" alt="">
                         <div>
                             <p>By <span>{{item.name}}</span> | {{item.date}}</p>
-                            <h2>{{item.title}}</h2>
+                            <h2 [routerLink]="['/layout/blog-post/', item.id]">{{item.title}}</h2>
                             <p>{{item.description}}</p>
                         </div>
                     </div>

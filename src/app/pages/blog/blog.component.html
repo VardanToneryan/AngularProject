@@ -7,7 +7,7 @@
                 <h2>Step-by-step guide to choosing great font pairs</h2>
                 <p>By <span>{{featuredPost.name}}</span> {{featuredPost.date}} </p>
                 <span>{{featuredPost.description}}</span>
-                <a class="yellow-button" routerLink="/layout/blog-post">Read More ></a>
+                <a class="yellow-button" [routerLink]="['/layout/blog-post', featuredPost.id]">Read More ></a>
             </div>
             <div class="blog-header_image">
                 <img src="{{featuredPost.image}}" alt="This ia a image">
@@ -35,14 +35,19 @@
             </div>
             }
             <div class="section-1_prevbAndNextb">
-                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                <pagination-controls class="my-pagination" (pageChange)="p = $event"></pagination-controls>
             </div>
         </section>
         <section class="section-2">
             <h2>Choose A Category</h2>
             <div class="section-2_display-flex">
                 @for(item of Category; track item){
-                <app-category [data]="item"></app-category>
+                <!-- <app-category [data]="item"></app-category> -->
+                <div [routerLink]="['/layout/category/', item.id]">
+                    <img src="{{item.image}}" alt="This is a image">
+                    <h3>{{item.title}}</h3>
+                    <p>{{item.description}}</p>
+                </div>
                 }@empty {
                 <h2>there is no items</h2>
                 }

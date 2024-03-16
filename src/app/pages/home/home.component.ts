@@ -42,12 +42,16 @@ export class HomeComponent implements OnInit {
   prevButtonWidth: string = '42px';
   BlogAllPosts: BlogAllPosts[] = [];
   categories: Category[] = [];
+  
   authors: Authors[] = [];
   author10!: Authors;
   featuredPost!: Authors;
-  allAuthors: Authors[] = [];;
+  allAuthors: Authors[] = [];
+  id!: number | string
 
-  constructor(public request: RequestService) { }
+  constructor(public request: RequestService, public activateRoute: ActivatedRoute) {
+    this.id = activateRoute.snapshot.params['id']
+   }
 
   ngOnInit(): void {
     this.swiper = new Swiper('.swiper-container', {});
@@ -57,6 +61,11 @@ export class HomeComponent implements OnInit {
   }
 
   loadCategory() {
+    this.request.getData<Category[]>(environments.Category.get).subscribe((data) => {
+      this.categories = data;
+    }, (e) => {
+      console.log(e);
+    })
     this.request.getData<Category[]>(environments.Category.get).subscribe((data) => {
       this.categories = data;
     }, (e) => {
